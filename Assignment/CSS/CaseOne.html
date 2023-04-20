@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        section {
+            width: 100%;
+            height: 720px;
+            position: relative;
+        }
+
+        .rec {
+            width: 50%;
+            height: 50%;
+        }
+
+        section > div:nth-child(1) {
+            background-color: red;
+            position: absolute;
+        }
+
+        section > div:nth-child(2) {
+            background-color: green;
+            position: absolute;
+            right: 0;
+        }
+
+        section > div:nth-child(3) {
+            background-color: orange;
+            position: absolute;
+            bottom: 0;
+        }
+
+        section > div:nth-child(4) {
+            background-color: deeppink;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        section > div:nth-child(5) {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        section > div:nth-child(5) > div {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .mid_circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .mid_rec {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .white_quarter_half_circles {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            display: inline-block;
+            position: absolute;
+        }
+
+        div:nth-child(6) {
+            border-bottom-right-radius: 100%;
+        }
+
+        div:nth-child(7) {
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+        div:nth-child(10) {
+            bottom: 0px;
+            left: 0px;
+            border-top-right-radius: 100%;
+        }
+
+        div:nth-child(11) {
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+        }
+
+        .white_half_circles {
+            width: 200px;
+            height: 100px;
+            background: white;
+            position: absolute;
+            display: inline-block;
+        }
+
+        div:nth-child(8) {
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+
+        div:nth-child(9) {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-top-right-radius: 100px;
+            border-top-left-radius: 100px;
+        }
+
+    </style>
+    <link href="normalize.css" rel="stylesheet">
+</head>
+<body>
+
+<section>
+    <div class="rec">
+        <div class="mid_circle">
+            <div class="mid_rec"></div>
+        </div>
+    </div>
+    <div class="rec">
+        <div class="mid_circle">
+            <div class="mid_rec"></div>
+        </div>
+    </div>
+    <div class="rec">
+        <div class="mid_circle">
+            <div class="mid_rec"></div>
+        </div>
+    </div>
+    <div class="rec">
+        <div class="mid_circle">
+            <div class="mid_rec"></div>
+        </div>
+    </div>
+
+    <div>
+        <div></div>
+    </div>
+
+    <div class="white_quarter_half_circles"></div>
+    <div class="white_quarter_half_circles"></div>
+    <div class="white_half_circles"></div>
+    <div class="white_half_circles"></div>
+    <div class="white_quarter_half_circles"></div>
+    <div class="white_quarter_half_circles"></div>
+
+</section>
+
+<section>
+    <div class="rec">
+        <div class="mid_circle">
+            <div class="mid_rec"></div>
+        </div>
+    </div>
+    <div class="rec">
+        <div class="mid_circle">
+            <div class="mid_rec"></div>
+        </div>
+    </div>
+    <div class="rec">
+        <div class="mid_circle">
+            <div class="mid_rec"></div>
+        </div>
+    </div>
+    <div class="rec">
+        <div class="mid_circle">
+            <div class="mid_rec"></div>
+        </div>
+    </div>
+
+    <div>
+        <div></div>
+    </div>
+
+    <div class="white_quarter_half_circles"></div>
+    <div class="white_quarter_half_circles"></div>
+    <div class="white_half_circles"></div>
+    <div class="white_half_circles"></div>
+    <div class="white_quarter_half_circles"></div>
+    <div class="white_quarter_half_circles"></div>
+
+</section>
+
+</body>
+</html>
