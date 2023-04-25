@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        section:nth-child(1)>div:nth-child(1){
+            width: 250px;
+            height: 250px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            border: 15px solid red;
+            z-index: 3;
+        }
+        section:nth-child(1)>div:nth-child(2){
+            width: 270px;
+            height: 270px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            border: 15px solid gray;
+            z-index: 3;
+        }
+        section:nth-child(1)>div:nth-child(3){
+            width: 270px;
+            height: 270px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            background-color: purple;
+        }
+            h1{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 120px;
+            bottom: 0;
+            margin: auto;
+            color: orangered;
+            text-align: center;
+            color: white;
+        }
+        section:nth-child(2)>div{
+            width: 250px;
+            height: 250px;
+            background-color: darkblue;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+        section:nth-child(3)>div{
+            width: 250px;
+            height: 250px;
+            background-color: darkgreen;
+            position: absolute;
+            left: 0;
+            right: 0px;
+            bottom: 0;
+            top: 0px;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+        <div></div>
+        <div></div>
+        <div>
+            <h1>Hello</h1>
+        </div>
+</section>
+
+<section>
+    <div>
+        <h1>Welcome To</h1></div>
+</section>
+<section>
+    <div>
+        <h1>IJSE</h1></div>
+</section>
+
+
+</body>
+</html>
