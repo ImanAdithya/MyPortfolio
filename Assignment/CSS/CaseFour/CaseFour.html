@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+
+      section>div:nth-child(1){
+          width:100vw;
+          height: 8vh;
+          background-color: red;
+          position: sticky;
+          z-index: 3;
+          top: 0;
+      }
+
+      section>div:nth-child(2){
+         height: 92vh;
+          width: 100vw;
+      }
+      section>div:nth-child(1)>h2{
+          margin: 0;
+          padding-top: 22px;
+          padding-left: 10px;
+          color: white;
+      }
+      section>div:nth-child(2)>h1{
+          margin: 0;
+          font-size: 70px;
+          position: relative;
+          text-align: center;
+          top: 45%;
+      }
+
+      section:nth-child(2)>div:nth-child(2){
+          background-color: orangered;
+      }
+
+      section:nth-child(3)>div:nth-child(2){
+          background-color: darkblue;
+      }
+      section:nth-child(4)>div:nth-child(2){
+          background-color: aqua;
+      }
+      section:nth-child(2)>div:nth-child(1){
+          background-color: rebeccapurple;
+      }
+      section:nth-child(3)>div:nth-child(1){
+          background-color: black;
+      }
+  </style>
+</head>
+<body>
+<section>
+    <div><h2>Card 1</h2></div>
+    <div><h1>HELLO</h1></div>
+</section>
+
+<section>
+    <div><h2>Card 2</h2></div>
+    <div><h1>HOW</h1></div>
+</section>
+
+<section>
+    <div><h2>Card 3</h2></div>
+    <div><h1>ARE</h1></div>
+</section>
+
+<section>
+    <div><h2>Card 4</h2></div>
+    <div><h1>YOU</h1></div>
+</section>
+
+
+
+</body>
+</html>
