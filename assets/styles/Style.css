@@ -1,0 +1,57 @@
+header{
+    height: 70px;
+    border: 1px solid black ;
+    background-color: rgba(23, 39, 82, 1);
+    border: solid black;
+    position: relative;
+}
+
+header>h3{
+    color: white;
+    font-family:"Tsukushi A Round Gothic";
+    font-size: 30px;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+header>nav>ul{
+    position: absolute;
+    top: 0;
+    right: 160px;
+}
+header>nav>ul>li{
+    display: inline;
+    margin-right: 20px;
+    border-right: 20px;
+    font-size: 19px;
+    color: white;
+    font-family:"Tsukushi A Round Gothic";
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    margin-left: 9px;
+    font-weight: bold;
+    font-family:"Tsukushi A Round Gothic";
+}
+header>nav>div{
+    width: 150px;
+    height: 30px;
+    border:2px solid white;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    position: absolute;
+    right: 9px;
+    top: 13px;
+    margin: auto;
+}
+header>nav>div>h4{
+    font-family:"Tsukushi A Round Gothic";
+    color: white;
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 21px;
+    right: 0;
+    margin: auto;
+}
