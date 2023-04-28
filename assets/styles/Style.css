@@ -1,9 +1,10 @@
+/*Header Style*/
 header{
     height: 70px;
-    border: 1px solid black ;
     background-color: rgba(23, 39, 82, 1);
     border: solid black;
     position: relative;
+
 }
 
 header>h3{
@@ -54,4 +55,22 @@ header>nav>div>h4{
     left: 21px;
     right: 0;
     margin: auto;
+}
+
+/*Home Styles*/
+
+body>main>section:nth-child(1){
+    width: 100vw;
+    height: 95vh;
+    background-color: rgba(23, 39, 82, 1);
+    position: relative;
+}
+
+body>main>section:nth-child(1)>article>h3{
+    margin-top: 0px;
+}
+body>main>section:nth-child(1)>aside{
+    position: absolute;
+    top: 88px;
+    right: 73px;
 }
