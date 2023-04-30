@@ -1,23 +1,29 @@
 /*Header Style*/
+body{
+    position: relative;
+}
 header{
     height: 70px;
-    background-color: rgba(23, 39, 82, 1);
-    border: solid black;
-    position: relative;
+    background-color: rgba(7, 29, 66, 1);
+    position: sticky;
+    z-index: 2;
+    top: 0;
 
 }
 
-header>h3{
+header>p{
     color: white;
-    font-family:"Tsukushi A Round Gothic";
+    position: absolute;
+    /*font-family:"Tsukushi A Round Gothic";*/
+    font-family:"Toppan Bunkyu Gothic";
     font-size: 30px;
-    margin-top: 16px;
-    margin-left: 10px;
+    margin-top: 12px;
+    margin-left: 15px;
 }
 
 header>nav>ul{
     position: absolute;
-    top: 0;
+    top: 4px;
     right: 160px;
 }
 header>nav>ul>li{
@@ -26,28 +32,30 @@ header>nav>ul>li{
     border-right: 20px;
     font-size: 19px;
     color: white;
-    font-family:"Tsukushi A Round Gothic";
 }
 header>nav>ul>li>a{
     text-decoration: none;
     color: white;
     margin-left: 9px;
     font-weight: bold;
-    font-family:"Tsukushi A Round Gothic";
+    /*font-family:"Tsukushi A Round Gothic";*/
+    /*font-family: "Roboto Light";*/
+    font-family:"Toppan Bunkyu Gothic"
 }
+
 header>nav>div{
     width: 150px;
     height: 30px;
     border:2px solid white;
     background-color: dodgerblue;
-    border-radius: 20px;
+    border-radius: 10px;
     position: absolute;
     right: 9px;
     top: 13px;
     margin: auto;
 }
 header>nav>div>h4{
-    font-family:"Tsukushi A Round Gothic";
+    font-family:"Toppan Bunkyu Gothic";
     color: white;
     position: absolute;
     top: 5px;
@@ -62,15 +70,162 @@ header>nav>div>h4{
 body>main>section:nth-child(1){
     width: 100vw;
     height: 95vh;
-    background-color: rgba(23, 39, 82, 1);
+    background: url("/assets/image/back.jpg");
+    background-size: 100vw 95vh;
+    /*background-color: rgba(23, 39, 82, 1);*/
     position: relative;
 }
 
 body>main>section:nth-child(1)>article>h3{
     margin-top: 0px;
 }
+body>main>section:nth-child(1)>article>h4{
+    margin-top: 0px;
+}
 body>main>section:nth-child(1)>aside{
     position: absolute;
-    top: 88px;
-    right: 73px;
+    top: 0;
+    right: 0;
+}
+body>main>section:nth-child(1)>aside>image{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    }
+body>main>section:nth-child(1)>article{
+    width: 50vw;
+    height: 95vh;
+    position: relative;
+}
+
+body>main>section:nth-child(1)>article>h4:nth-child(1){
+    color: white;
+    position: absolute;
+    top:190px;
+    left: 96px;
+    font-size: 65px;
+}
+body>main>section:nth-child(1)>article>h4:nth-child(2){
+    /*color: rgba(0, 168, 255, 1);*/
+    color: #1B9CFC;
+    position: absolute;
+    top:190px;
+    left: 210px;
+    font-size: 65px;
+}
+body>main>section:nth-child(1)>article>h4:nth-child(3){
+    /*color: rgba(0, 168, 255, 1);*/
+    color: white;
+    position: absolute;
+    top:268px;
+    left: 96px;
+    font-size: 65px;
+}
+
+body>main>section:nth-child(1)>article>h4:nth-child(4){
+    /*color: rgba(0, 168, 255, 1);*/
+    color: #1B9CFC;
+    position: absolute;
+    top:268px;
+    left: 150px;
+    font-size: 65px;
+}
+
+body>main>section:nth-child(1)>article>p{
+    /*color: rgba(0, 168, 255, 1);*/
+    color: white;
+    position: absolute;
+    top:350px;
+    left: 96px;
+    font-size: 19px;
+    font-family:Arial;
+    /*opacity: .5;*/
+}
+body>main>section:nth-child(1)>article>p{
+
+    color: white;
+    position: absolute;
+    top:350px;
+    left: 96px;
+    font-size: 19px;
+    /*font-family:Optima;*/
+    /*opacity: .5;*/
+    font-family:"Tsukushi A Round Gothic";
+}
+
+body>main>section:nth-child(1)>article>div{
+    width: 173px;
+    height: 58px;
+    background-color: #1B9CFC;
+    border-radius: 30px;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    right: 490px;
+    bottom: 0;
+    margin: auto;
+    /*position: relative;*/
+}
+body>main>section:nth-child(1)>article>div>div{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color:#1B9CFC ;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border: 3px solid white;
+}
+body>main>section:nth-child(1)>article>div>div>div{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color:white ;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+body>main>section:nth-child(1)>article>div>p{
+    color: white;
+    position: absolute;
+    top: 9px;
+    left: 16px;
+    font-family: "Arial Hebrew Scholar";
+    font-size: 14px;
+}
+body>main>section:nth-child(1)>article>div>div>div>img{
+    position: absolute;
+    width:30px;
+    height: 35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+body>main>section:nth-child(1)>img{
+    width: 31px;
+    height: 31px;
+    right: 4px;
+    opacity: .7;
+    position: absolute;
+}
+body>main>section:nth-child(1)>img:nth-child(3){
+    width: 39px;
+    height: 39px;
+    right: 0;
+    bottom: 170px;
+}
+body>main>section:nth-child(1)>img:nth-child(4){
+    bottom: 130px;
+}
+body>main>section:nth-child(1)>img:nth-child(5){
+    bottom:85px;
+}
+body>main>section:nth-child(1)>img:nth-child(6){
+    bottom: 40px;
 }
