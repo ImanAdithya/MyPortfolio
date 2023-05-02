@@ -87,7 +87,7 @@ body>main>section:nth-child(1)>aside{
     top: 0;
     right: 0;
 }
-body>main>section:nth-child(1)>aside>image{
+body>main>section:nth-child(1)>aside>img{
     position: absolute;
     top: 0;
     right: 0;
@@ -228,4 +228,219 @@ body>main>section:nth-child(1)>img:nth-child(5){
 }
 body>main>section:nth-child(1)>img:nth-child(6){
     bottom: 40px;
+}
+
+/*About Styles*/
+
+body>main>section:nth-child(2){
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    background-color: rgba(241, 251, 255, 0.54);
+}
+body>main>section:nth-child(2)>p:nth-child(1){
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right:470px;
+    font-size: 120px;
+    font-weight: bold;
+    opacity:.1;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(2)>aside{
+    width: 32vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body>main>section:nth-child(2)>article{
+    width: 68vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+body>main>section:nth-child(2)>p:nth-child(2){
+    margin-top: 0;
+    position: absolute;
+    top: 40px;
+    right:640px;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(2)>div:nth-child(3) {
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #1B9CFC;
+    top: 78px;
+    right: 740px;
+}
+
+body>main>section:nth-child(2)>aside>img{
+    width: 500px;
+    height: 730px;
+    position: absolute;
+   bottom: 50px;
+    left: 0;
+}
+body>main>section:nth-child(2)>article>p:nth-child(1){
+    position: absolute;
+    left: 0;
+    top: 150px;
+    font-size: 40px;
+    font-family:"Toppan Bunkyu Gothic"
+}
+
+body>main>section:nth-child(2)>article>p:nth-child(2){
+    position: absolute;
+    left: 0;
+    top: 300px;
+    font-size: 20px;
+    font-family:"Toppan Bunkyu Gothic";
+    opacity: .7;
+}
+body>main>section:nth-child(2)>article>p:nth-child(3){
+    position: absolute;
+    left: 0;
+    top:430px;
+    font-size: 20px;
+    font-family:"Toppan Bunkyu Gothic";
+    opacity: .7;
+}
+body>main>section:nth-child(2)>article>p:nth-child(4){
+    position: absolute;
+    left: 0;
+    bottom:370px;
+    font-size: 20px;
+    font-family:"Toppan Bunkyu Gothic";
+    opacity: .7;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5){
+    position: absolute;
+    width:650px;
+    height: 250px;
+    background-color:rgba(247, 250, 252, 1);
+    bottom: 100px;
+    left: 0;
+    border-radius: 30px;
+    border: 1px solid darkblue;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4{
+    position: absolute;
+    /*display: inline-block;*/
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(1){
+    top: 0;
+    left: 13px;
+    font-size: 22px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(2){
+    top: 28px;
+    left: 13px;
+    opacity: .5;
+    font-size: 20px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(3){
+    top: 83px;
+    left: 13px;
+    font-size: 22px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(4){
+    top: 111px;
+    left: 13px;
+    opacity: .5;
+    font-size: 20px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(5){
+    top: 164px;
+    left: 13px;
+    font-size: 22px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(6){
+    top: 189px;
+    left: 13px;
+    opacity: .5;
+    font-size: 20px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(7){
+    left: 400px;
+    font-size: 22px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(8){
+    top: 28px;
+    left: 400px;
+    opacity: .5;
+    font-size: 20px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(9){
+    top: 83px;
+    left: 400px;
+    font-size: 22px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(10){
+    top: 111px;
+    left: 400px;
+    opacity: .5;
+    font-size: 20px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(11){
+    top: 164px;
+    left: 400px;
+    font-size: 22px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(12){
+    top: 189px;
+    left: 400px;
+    opacity: .5;
+    font-size: 20px;
+}
+
+/*Skill Styles*/
+body>main>section:nth-child(3){
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    background-color: rgba(241, 251, 255, 0.54);
+    /*background-color: red;*/
+}
+body>main>section:nth-child(3)>p:nth-child(1){
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right:500px;
+    font-size: 120px;
+    font-weight: bold;
+    opacity:.1;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(3)>p:nth-child(2){
+    margin-top: 0;
+    position: absolute;
+    top: 40px;
+    right:740px;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(3)>div:nth-child(3) {
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #1B9CFC;
+    top: 75px;
+    right: 770px;
+}
+body>main>section:nth-child(3)>section:nth-child(4) {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    background-color: crimson;
+    left: 0;
+    top: 0;
+
 }
