@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transition Case 01</title>
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="normalize.css">
+
+  <link rel="stylesheet" href="../../../fontawesome/css/all.min.css">
+
+  <style>
+    section{
+      width: 100vw;
+      height: 100vh;
+    }
+
+    section div{
+      width: 200px;
+      height: 50px;
+      background-color: purple;
+      margin-top: 100px;
+      position: relative;
+      left: -10%;
+      color: white;
+      font-size: 20px;
+      transition: 2s;
+
+    }
+
+    section div i{
+      position: relative;
+      top: 10px;
+      color: white;
+      margin-left: 70px;
+      font-size: 30px;
+    }
+
+    section div:hover{
+      left: 0;
+      transition: 2s;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div>Menu One<i class="fa-solid fa-address-book"></i></div>
+  <div>Menu Two<i class="fa-solid fa-truck-medical"></i></div>
+  <div>Menu Three<i class="fa-solid fa-book"></i></div>
+  <div>Menu Four<i class="fa-solid fa-layer-group"></i></div>
+  <div>Menu Four<i class="fa-solid fa-cart-plus"></i></div>
+</section>
+</body>
+</html>
