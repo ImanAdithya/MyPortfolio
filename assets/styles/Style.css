@@ -82,6 +82,7 @@ body>main>section:nth-child(1)>article{
     top:0;
     left: 0;
 }
+
 body>main>section:nth-child(1)>aside{
     width: 50vw;
     height: 95vh;
@@ -288,8 +289,8 @@ body>main>section:nth-child(2)>div:nth-child(3) {
 }
 
 body>main>section:nth-child(2)>aside>img{
-    width: 500px;
-    height: 730px;
+    width: 90%;
+    height: 75%;
     position: absolute;
    bottom: 50px;
     left: 0;
@@ -411,7 +412,7 @@ body>main>section:nth-child(3){
     position: relative;
     width: 100vw;
     height: 95vh;
-    background-color: rgba(241, 251, 255, 0.54);
+    background-color: rgba(242, 251, 255, 1);
     /*background-color: red;*/
 }
 body>main>section:nth-child(3)>p:nth-child(1){
@@ -435,25 +436,364 @@ body>main>section:nth-child(3)>p:nth-child(2){
 }
 body>main>section:nth-child(3)>div:nth-child(3) {
     position: absolute;
-    width: 80px;
-    height: 4px;
-    background-color: #1B9CFC;
-    top: 75px;
-    right: 770px;
+    width: 50vw;
+    height: 6vh;
+    background-color: rgba(31, 58, 130, 1);
+    right: 400px;
+    top:200px;
+    z-index: 2;
+    border-radius: 35px;
 }
+
 body>main>section:nth-child(3)>section:nth-child(4) {
     width: 70vw;
     height: 60vh;
     position: absolute;
-    background-color: crimson;
     left: 270px;
     top: 225px;
+    border: 2px solid rgba(65, 177, 184, 1);
+    background-color: white;
+
 }
-body>main>section:nth-child(3)>div:nth-child(5) {
-    width: 70vw;
-    height: 60vh;
+body>main>section:nth-child(3)>div:nth-child(3)>button {
+    background-color: rgba(31, 58, 130, 1);
+    border-radius: 35px;
+    height: 6vh;
+    color: white;
+    width: 15vh;
+    border: none;
     position: absolute;
-    background-color: crimson;
-    left: 270px;
-    top: 225px;
+    font-family: "Avenir Next";
+    font-weight: bold;
 }
+body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(2) {
+    left:240px;
+}
+body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(3) {
+    left:470px;
+    background-color:  rgba(0, 168, 255, 1);
+}
+body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(4) {
+    left:695px;
+}
+body>main>section:nth-child(3)>img{
+    width: 1150px;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    left: 280px;
+    top: 280px;
+}
+
+/*Service Styles*/
+body>main>section:nth-child(4){
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    background-color: rgba(242, 251, 255, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+body>main>section:nth-child(4)>h1:nth-child(1){
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right:550px;
+    font-size: 120px;
+    font-weight: bold;
+    opacity:.1;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(4)>div:nth-child(1){
+    left: 300px;
+    position: absolute;
+    top: 200px;
+    width: 200px;
+    height: 30px;
+    background-color: #ff253a;
+}
+body>main>section:nth-child(4)>h3:nth-child(2){
+    margin-top: 0;
+    position: absolute;
+    top: 40px;
+    right:740px;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(4)> #underline{
+    background-color: rgba(0, 168, 255, 1);
+    width: 70px;
+    height: 4px;
+    position: absolute;
+    left: 814px;
+    top: 77px;
+}
+body>main>section:nth-child(4)>section:nth-child(4){
+    /*background-color: rgba(248, 248, 245, 1);*/
+    background-color: rgba(235, 241, 244, 1);
+    position: absolute;
+    width: 100vw;
+    height: 60vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body>main>section>.cat{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    /*background-color: rgba(239, 239, 238, 1);*/
+    background-color: white;
+    border: 2px black;
+    top: -55px;
+    border: 2px solid rgba(65, 177, 184, 1);
+}
+body>main>section>div:nth-child(5){
+    left: 70px;
+}
+body>main>section>div:nth-child(7){
+    right: 70px;
+}
+body>main>section>div:nth-child(5)>img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 140px;
+    top: 20px;
+    margin-right: 20px;
+}
+body>main>section>div:nth-child(5)>h4{
+    font-size: 23px;
+    font-family: "Avenir Next";
+    position: relative;
+    left: 48px;
+}
+body>main>section>div:nth-child(5)>p{
+    font-size: 16px;
+    font-family: "Avenir Next";
+    position: relative;
+    left: 10px;
+    top: -12px;
+    margin-left: 8px;
+}
+
+body>main>section>div:nth-child(6)>img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 140px;
+    top: 20px;
+}
+body>main>section>div:nth-child(6)>h4 {
+    font-size: 23px;
+    font-family: "Avenir Next";
+    position: relative;
+    left: 68px;
+}
+body>main>section>div:nth-child(6)>p{
+    font-size: 16px;
+    font-family: "Avenir Next";
+    position: relative;
+    left: 10px;
+    top: -12px;
+}
+body>main>section>div:nth-child(7)>img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 140px;
+    top: 20px;
+}
+body>main>section>div:nth-child(7)>h4{
+    font-size: 23px;
+    font-family: "Avenir Next";
+    position: relative;
+    left: 98px;
+}
+body>main>section>div:nth-child(7)>p{
+    font-size: 16px;
+    font-family: "Avenir Next";
+    position: relative;
+    left: 10px;
+    top: -12px;
+}
+
+body>main>section>section:nth-child(8){
+    position: absolute;
+    width: 73vw;
+    height: 15vh;
+    /*background-color: red;*/
+    bottom: 100px;
+    right: 225px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+body>main>section>section:nth-child(8)>div:nth-child(1){
+    /*background-color: #1B9CFC;*/
+}
+body>main>section>section:nth-child(8)>div:nth-child(1)>h3{
+    position: relative;
+    left: 140px;
+    top: 20px;
+    font-size: 50px;
+    font-family: "Al Nile";
+    margin-top: 0;
+    margin-bottom: 0
+}
+body>main>section>section:nth-child(8)>div:nth-child(1)>h4{
+    position: relative;
+    left: 100px;
+    top: 30px;
+    font-size: 17px;
+    font-family: "Al Nile";
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body>main>section>section:nth-child(8)>div:nth-child(1)>div{
+    position: relative;
+    left: 300px;
+    bottom: 50px;
+    width: 3px;
+    height: 90px;
+    background-color: black;
+    opacity: 0.2;
+}
+body>main>section>section:nth-child(8)>div:nth-child(2){
+    /*background-color: orange;*/
+}
+body>main>section>section:nth-child(8)>div:nth-child(2)>h3{
+    position: relative;
+    left: 140px;
+    top: 20px;
+    font-size: 50px;
+    font-family: "Al Nile";
+    margin-top: 0;
+    margin-bottom: 0
+}
+body>main>section>section:nth-child(8)>div:nth-child(2)>h4{
+    position: relative;
+    left: 100px;
+    top: 30px;
+    font-size: 17px;
+    font-family: "Al Nile";
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body>main>section>section:nth-child(8)>div:nth-child(2)>div{
+    position: relative;
+    left: 300px;
+    bottom: 50px;
+    width: 3px;
+    height: 90px;
+    background-color: black;
+    opacity: 0.2;
+}
+body>main>section>section:nth-child(8)>div:nth-child(3){
+    /*background-color: pink;*/
+}
+body>main>section>section:nth-child(8)>div:nth-child(3)>h3{
+    position: relative;
+    left: 140px;
+    top: 20px;
+    font-size: 50px;
+    font-family: "Al Nile";
+    margin-top: 0;
+    margin-bottom: 0
+}
+body>main>section>section:nth-child(8)>div:nth-child(3)>h4{
+    position: relative;
+    left: 100px;
+    top: 30px;
+    font-size: 17px;
+    font-family: "Al Nile";
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body>main>section>section:nth-child(8)>div:nth-child(3)>div{
+    position: relative;
+    left: 300px;
+    bottom: 50px;
+    width: 3px;
+    height: 90px;
+   background-color: black;
+    opacity: 0.2;
+}
+body>main>section>section:nth-child(8)>div:nth-child(4){
+    /*background-color: green;*/
+}
+body>main>section>section:nth-child(8)>div:nth-child(4)>h3{
+    position: relative;
+    left: 140px;
+    top: 20px;
+    font-size: 50px;
+    font-family: "Al Nile";
+    margin-top: 0;
+    margin-bottom: 0
+}
+body>main>section>section:nth-child(8)>div:nth-child(4)>h4{
+    position: relative;
+    left: 130px;
+    top: 30px;
+    font-size: 17px;
+    font-family: "Al Nile";
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Contact style*/
+body>main>section:nth-child(5){
+    position: relative;
+    width: 100vw;
+    height: 95vh;
+    background-color: rgba(241, 251, 255, 0.54);
+    margin-right: 10px;
+}
+/*body>main>section:nth-child(5)>h1:nth-child(1){*/
+/*    */
+/*    position: relative;*/
+/*    font-size: 120px;*/
+/*    font-weight: bold;*/
+/*    font-family: "Avenir Next";*/
+/*    opacity: 0.1;*/
+/*    left: 550px;*/
+/*    */
+/*}*/
+/*body>main>section:nth-child(4)>h3:nth-child(2){*/
+/*    margin-top: 0;*/
+/*    margin-bottom: 0;*/
+/*    position: relative;*/
+/*    font-size: 38px;*/
+/*    font-weight: bold;*/
+/*    font-family: "Avenir Next";*/
+/*    left: 700px;*/
+/*    top: -90px;*/
+/*}*/
+/*body>main>section:nth-child(5)>div:nth-child(3){*/
+/*    position: absolute;*/
+/*    width: 80px;*/
+/*    height: 5px;*/
+/*    background-color: #1B9CFC;*/
+/*    top: 83px;*/
+/*    right: 820px;*/
+/*}*/
+/*body>main>section:nth-child(4)>article:nth-child(4){*/
+/*    position: absolute;*/
+/*    width: 30%;*/
+/*    height: 95%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background-color: red;*/
+/*}*/
+/*body>main>section:nth-child(4)>aside:nth-child(5){*/
+/*    position: absolute;*/
+/*    width: 70%;*/
+/*    height: 95%;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    background-color: hotpink;*/
+/*}*/
