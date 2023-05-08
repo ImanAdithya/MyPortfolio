@@ -412,7 +412,7 @@ body>main>section:nth-child(3){
     position: relative;
     width: 100vw;
     height: 95vh;
-    background-color: rgba(242, 251, 255, 1);
+    background-color: rgba(241, 251, 255, 0.54);
     /*background-color: red;*/
 }
 body>main>section:nth-child(3)>p:nth-child(1){
@@ -490,7 +490,7 @@ body>main>section:nth-child(4){
     position: relative;
     width: 100vw;
     height: 95vh;
-    background-color: rgba(242, 251, 255, 1);
+    background-color: rgba(241, 251, 255, 0.54);
 
     display: flex;
     align-items: center;
@@ -550,7 +550,7 @@ body>main>section>.cat{
     background-color: white;
     border: 2px black;
     top: -55px;
-    border: 2px solid rgba(65, 177, 184, 1);
+    /*border: 1px solid rgba(65, 177, 184, 1);*/
 }
 body>main>section>div:nth-child(5){
     left: 70px;
@@ -745,55 +745,136 @@ body>main>section>section:nth-child(8)>div:nth-child(4)>h4{
     margin-bottom: 0;
 }
 
+
+
+
 /*Contact style*/
 body>main>section:nth-child(5){
     position: relative;
     width: 100vw;
-    height: 95vh;
+    height: 85vh;
     background-color: rgba(241, 251, 255, 0.54);
     margin-right: 10px;
 }
-/*body>main>section:nth-child(5)>h1:nth-child(1){*/
-/*    */
-/*    position: relative;*/
-/*    font-size: 120px;*/
-/*    font-weight: bold;*/
-/*    font-family: "Avenir Next";*/
-/*    opacity: 0.1;*/
-/*    left: 550px;*/
-/*    */
-/*}*/
-/*body>main>section:nth-child(4)>h3:nth-child(2){*/
-/*    margin-top: 0;*/
-/*    margin-bottom: 0;*/
-/*    position: relative;*/
-/*    font-size: 38px;*/
-/*    font-weight: bold;*/
-/*    font-family: "Avenir Next";*/
-/*    left: 700px;*/
-/*    top: -90px;*/
-/*}*/
-/*body>main>section:nth-child(5)>div:nth-child(3){*/
-/*    position: absolute;*/
-/*    width: 80px;*/
-/*    height: 5px;*/
-/*    background-color: #1B9CFC;*/
-/*    top: 83px;*/
-/*    right: 820px;*/
-/*}*/
-/*body>main>section:nth-child(4)>article:nth-child(4){*/
-/*    position: absolute;*/
-/*    width: 30%;*/
-/*    height: 95%;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    background-color: red;*/
-/*}*/
-/*body>main>section:nth-child(4)>aside:nth-child(5){*/
-/*    position: absolute;*/
-/*    width: 70%;*/
-/*    height: 95%;*/
-/*    top: 0;*/
-/*    right: 0;*/
-/*    background-color: hotpink;*/
-/*}*/
+body>main>section:nth-child(5)>h1:nth-child(1){
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 120px;
+    opacity: 0.1;
+    position: absolute;
+    left: 550px;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(5)>h3:nth-child(2){
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: "Avenir Next";
+    left: 730px;
+    top: 40px;
+}
+body>main>section:nth-child(5)>div:nth-child(3){
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #1B9CFC;
+    top: 76px;
+    right: 790px;
+}
+body>main>section:nth-child(5)>article:nth-child(4){
+    position: relative;
+    height: 100%;
+    width: 35%;
+    top: 0;
+    left: 0;
+}
+body>main>section:nth-child(5)>aside:nth-child(5){
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+body>main>section:nth-child(5)>article:nth-child(4)>div{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color:rgba(36, 61, 125, 1);
+    position: absolute;
+}
+body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(1){
+    left: 60px;
+    top: 220px;
+}
+body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(2){
+    left: 60px;
+    top: 370px;
+}
+body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(3){
+    left: 60px;
+    top: 520px;
+}
+body>main>section:nth-child(5)>aside>form{
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+body>main>section:nth-child(5)>aside>form>#txtName{
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(23, 39, 82,1);
+    position: absolute;
+    left: 60px;
+}
+body>main>section:nth-child(5)>aside>form>#txtEmail{
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(23, 39, 82, 1);
+    position: absolute;
+    top: 0px;
+    left: 450px;
+}
+body>main>section:nth-child(5)>aside>form>#txtSubject{
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(23, 39, 82, 1);
+    position: absolute;
+    top: 60px;
+    left: 450px;
+}
+body>main>section:nth-child(5)>aside>form>#txtPhone{
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(23, 39, 82, 1);
+    position: absolute;
+    left: 60px;
+    top: 60px;
+
+}
+body>main>section:nth-child(5)>aside>form>#textArea{
+    width: 750px;
+    height: 180px;
+    border-radius: 8px;
+    border: 1px solid rgba(23, 39, 82, 1);
+    position: absolute;
+    left: 60px;
+    top: 119px;
+}
+body>main>section:nth-child(5)>aside>form>button{
+    width: 190px;
+    height: 50px;
+    background-color: rgba(0, 168, 255, 1);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top:90px;
+    left:3px;
+}
