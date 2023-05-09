@@ -701,7 +701,7 @@ body>main>section>section:nth-child(8)>div:nth-child(3)>h3{
     left: 140px;
     top: 20px;
     font-size: 50px;
-    font-family: "Al Nile";
+    font-family: "Avenir Next";
     margin-top: 0;
     margin-bottom: 0
 }
@@ -710,7 +710,7 @@ body>main>section>section:nth-child(8)>div:nth-child(3)>h4{
     left: 100px;
     top: 30px;
     font-size: 17px;
-    font-family: "Al Nile";
+    font-family: "Avenir Next";
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -731,7 +731,7 @@ body>main>section>section:nth-child(8)>div:nth-child(4)>h3{
     left: 140px;
     top: 20px;
     font-size: 50px;
-    font-family: "Al Nile";
+    font-family: "Avenir Next";
     margin-top: 0;
     margin-bottom: 0
 }
@@ -740,19 +740,16 @@ body>main>section>section:nth-child(8)>div:nth-child(4)>h4{
     left: 130px;
     top: 30px;
     font-size: 17px;
-    font-family: "Al Nile";
+    font-family: "Avenir Next";
     margin-top: 0;
     margin-bottom: 0;
 }
-
-
-
 
 /*Contact style*/
 body>main>section:nth-child(5){
     position: relative;
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     background-color: rgba(241, 251, 255, 0.54);
     margin-right: 10px;
 }
@@ -786,13 +783,13 @@ body>main>section:nth-child(5)>div:nth-child(3){
 body>main>section:nth-child(5)>article:nth-child(4){
     position: relative;
     height: 100%;
-    width: 35%;
+    width: 45%;
     top: 0;
     left: 0;
 }
 body>main>section:nth-child(5)>aside:nth-child(5){
     position: absolute;
-    width: 65%;
+    width: 55%;
     height: 100%;
     top: 0;
     right: 0;
@@ -805,21 +802,100 @@ body>main>section:nth-child(5)>article:nth-child(4)>div{
     position: absolute;
 }
 body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(1){
-    left: 60px;
+    left: 80px;
     top: 220px;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(2){
-    left: 60px;
-    top: 370px;
+body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(1)>img{
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: 29px;
+    top: 25px;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(3){
-    left: 60px;
-    top: 520px;
+body>main>section:nth-child(5)>article:nth-child(4)>h3:nth-child(2){
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    left: 200px;
+    top: 230px;
+    font-size: 30px;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(5)>article:nth-child(4)>h4:nth-child(3){
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    left: 200px;
+    top: 260px;
+    font-size: 15px;
+    font-family: "Avenir Next";
+    opacity: 0.5;
+
+}
+body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(4){
+    left: 80px;
+    top: 350px;
+}
+body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(4)>img{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    left: 29px;
+    top: 35px;
+}
+body>main>section:nth-child(5)>article:nth-child(4)>h3:nth-child(5){
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    left: 200px;
+    top: 370px;
+    font-size: 30px;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(5)>article:nth-child(4)>h4:nth-child(6){
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    left: 200px;
+    top: 400px;
+    font-size: 15px;
+    font-family: "Avenir Next";
+    opacity: 0.5;
+}
+body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(7){
+    left: 80px;
+    top: 490px;
+}
+body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(7)>img{
+    width: 47px;
+    height: 40px;
+    position: absolute;
+    left: 26px;
+    top: 31px;
+}
+body>main>section:nth-child(5)>article:nth-child(4)>h3:nth-child(8){
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    left: 200px;
+    top: 510px;
+    font-size: 30px;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(5)>article:nth-child(4)>h4:nth-child(9){
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    left: 200px;
+    top: 540px;
+    font-size: 15px;
+    font-family: "Avenir Next";
+    opacity: 0.5;
 }
 body>main>section:nth-child(5)>aside>form{
     position: relative;
-    left: 100px;
-    top: 200px;
+    top: 230px;
+
 }
 body>main>section:nth-child(5)>aside>form>#txtName{
     width: 350px;
@@ -827,7 +903,7 @@ body>main>section:nth-child(5)>aside>form>#txtName{
     border-radius: 8px;
     border: 1px solid rgba(23, 39, 82,1);
     position: absolute;
-    left: 60px;
+
 }
 body>main>section:nth-child(5)>aside>form>#txtEmail{
     width: 350px;
@@ -836,7 +912,7 @@ body>main>section:nth-child(5)>aside>form>#txtEmail{
     border: 1px solid rgba(23, 39, 82, 1);
     position: absolute;
     top: 0px;
-    left: 450px;
+    left: 370px;
 }
 body>main>section:nth-child(5)>aside>form>#txtSubject{
     width: 350px;
@@ -845,7 +921,7 @@ body>main>section:nth-child(5)>aside>form>#txtSubject{
     border: 1px solid rgba(23, 39, 82, 1);
     position: absolute;
     top: 60px;
-    left: 450px;
+    left: 370px;
 }
 body>main>section:nth-child(5)>aside>form>#txtPhone{
     width: 350px;
@@ -853,28 +929,26 @@ body>main>section:nth-child(5)>aside>form>#txtPhone{
     border-radius: 8px;
     border: 1px solid rgba(23, 39, 82, 1);
     position: absolute;
-    left: 60px;
     top: 60px;
 
 }
 body>main>section:nth-child(5)>aside>form>#textArea{
-    width: 750px;
+    width: 720px;
     height: 180px;
     border-radius: 8px;
     border: 1px solid rgba(23, 39, 82, 1);
     position: absolute;
-    left: 60px;
     top: 119px;
 }
 body>main>section:nth-child(5)>aside>form>button{
     width: 190px;
     height: 50px;
     background-color: rgba(0, 168, 255, 1);
-    border-radius: 30px;
+    border-radius: 20px;
     border: none;
     color: white;
     font-size: 20px;
     position: absolute;
-    top:90px;
-    left:3px;
+    top: 330px;
+    font-family: "Avenir Next";
 }
