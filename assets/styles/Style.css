@@ -952,3 +952,18 @@ body>main>section:nth-child(5)>aside>form>button{
     top: 330px;
     font-family: "Avenir Next";
 }
+body>main>section:nth-child(5)>section{
+    position: absolute;
+    width: 1600px;
+    height: 350px;
+    background: url("/assets/image/mapNew.jpg");
+    bottom: 0px;
+    left: 36px;
+}
+footer{
+    height: 80px;
+    width: 100vw;
+    background-color: rgba(7, 29, 66, 1);
+    bottom: 0;
+    margin-top: 15px;
+}
