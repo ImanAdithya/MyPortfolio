@@ -961,9 +961,40 @@ body>main>section:nth-child(5)>section{
     left: 36px;
 }
 footer{
-    height: 80px;
+    height: 120px;
     width: 100vw;
     background-color: rgba(7, 29, 66, 1);
     bottom: 0;
     margin-top: 15px;
+}
+
+/*footer>h6:nth-child(2){*/
+footer>h4{
+    position: absolute;
+    color: white;
+    font-family: "Avenir Next";
+    font-size: 33px;
+    margin-top: 0;
+    margin-bottom: 0;
+    left: 5px;
+}
+footer>h6:nth-child(2){
+    position: absolute;
+    bottom: 10px;
+    right: 150px;
+    color: white;
+    font-family: "Avenir Next";
+    font-size: 13px;
+    margin-bottom: 0;
+
+}
+footer>h6:nth-child(3){
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-family: "Avenir Next";
+    font-size: 13px;
+    margin-bottom: 0;
+
 }
