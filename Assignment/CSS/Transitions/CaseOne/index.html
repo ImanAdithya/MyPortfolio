@@ -2,45 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Animation</title>
+  <title>Transition Case 01</title>
   <meta name="viewport" content="width=device-width initial-scale=1">
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/fonts-awesome/css/all.min.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
   <style>
     section{
-      width: 100px;
-      height: 100px;
-      background: red;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    section div{
+      width: 200px;
+      height: 50px;
+      background-color: orangered;
+      box-shadow: 3px 3px 3px black;
+      margin-top: 100px;
       position: relative;
-      left: 0;
-      animation:testOne;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
+      left: -10%;
+      color: white;
+      font-size: 20px;
+      transition: 2s;
 
     }
 
-    @keyframes testOne {
-      from{
-        width: 100px;
-        height: 100px;
-        background: red;
-      }
-      to{
-        width: 100px;
-        height: 100px;
-        background: green;
-        border-radius: 100%;
-        left: 300px;
-      }
+    section div i{
+      position: relative;
+      top: 10px;
+      color: white;
+      margin-left: 70px;
+      font-size: 30px;
+    }
 
+    section div:hover{
+      left:-8px;
+      transition: 2s;
     }
   </style>
 </head>
 <body>
-
 <section>
-
+  <div>Menu One<i class="fa-solid fa-address-book"></i></div>
+  <div>Menu Two<i class="fa-solid fa-truck-medical"></i></div>
+  <div>Menu Three<i class="fa-solid fa-book"></i></div>
+  <div>Menu Four<i class="fa-solid fa-layer-group"></i></div>
+  <div>Menu Four<i class="fa-solid fa-cart-plus"></i></div>
 </section>
-
 </body>
 </html>
