@@ -956,7 +956,7 @@ body>main>section:nth-child(5)>section{
     position: absolute;
     width: 1600px;
     height: 350px;
-    background: url("/assets/image/mapNew.jpg");
+    background: url("../image/mapNew.jpg");
     bottom: 0px;
     left: 36px;
 }
