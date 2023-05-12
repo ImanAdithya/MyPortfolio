@@ -70,7 +70,7 @@ header>nav>div>h4{
 body>main>section:nth-child(1){ /*main section*/
     width: 100vw;
     height: 95vh;
-    background: url("/assets/image/back.jpg");
+    background: url("assets/image/back.jpg");
     background-size: 100vw 95vh;
     /*background-color: rgba(23, 39, 82, 1);*/
     position: relative;
@@ -328,12 +328,12 @@ body>main>section:nth-child(2)>article>p:nth-child(4){
     opacity: .7;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5){
-    position: absolute;
+    position: relative;
     width:650px;
     height: 250px;
     background-color:rgba(247, 250, 252, 1);
-    bottom: 100px;
-    left: 0;
+    top: 630px;
+    right: 0;
     border-radius: 30px;
     border: 1px solid darkblue;
 }
