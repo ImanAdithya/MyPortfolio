@@ -237,7 +237,6 @@ body>main>section:nth-child(1)>img:nth-child(6){
 }
 
 /*About Styles*/
-
 body>main>section:nth-child(2){
     position: relative;
     width: 98vw;
@@ -256,8 +255,8 @@ body>main>section:nth-child(2)>p:nth-child(1){
     font-family: "Avenir Next";
 }
 body>main>section:nth-child(2)>aside{
-    width: 32vw;
-    height: 100vh;
+    width:33%;
+    height: 105%;
     position: absolute;
     top: 0;
     left: 0;
@@ -417,9 +416,8 @@ body>main>section:nth-child(3){
 body>main>section:nth-child(3)>p:nth-child(1){
     margin-top: 0;
     position: absolute;
-    top: 0;
-    right:500px;
-    font-size: 120px;
+    left: 30%;
+    font-size: 780%;
     font-weight: bold;
     opacity:.1;
     font-family: "Avenir Next";
@@ -427,9 +425,9 @@ body>main>section:nth-child(3)>p:nth-child(1){
 body>main>section:nth-child(3)>p:nth-child(2){
     margin-top: 0;
     position: absolute;
-    top: 40px;
-    right:740px;
-    font-size: 38px;
+    top:4.5%;
+    left:46%;
+    font-size: 250%;
     font-weight: bold;
     font-family: "Avenir Next";
 }
@@ -438,8 +436,8 @@ body>main>section:nth-child(3)>div:nth-child(3) {
     width: 50vw;
     height: 6vh;
     background-color: rgba(31, 58, 130, 1);
-    right: 400px;
-    top:200px;
+    left: 26%;
+    top:21%;
     z-index: 2;
     border-radius: 35px;
 }
@@ -448,8 +446,8 @@ body>main>section:nth-child(3)>section:nth-child(4) {
     width: 70vw;
     height: 60vh;
     position: absolute;
-    left: 270px;
-    top: 225px;
+    left: 16%;
+    top: 24%;
     border: 2px solid rgba(65, 177, 184, 1);
     background-color: white;
 
@@ -465,19 +463,22 @@ body>main>section:nth-child(3)>div:nth-child(3)>button {
     font-family: "Avenir Next";
     font-weight: bold;
 }
+body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(1) {
+    left: 2%;
+}
 body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(2) {
-    left:240px;
+    left:26%;
 }
 body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(3) {
-    left:470px;
+    left:54%;
     background-color:  rgba(0, 168, 255, 1);
 }
 body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(4) {
-    left:695px;
+    left:79%;
 }
 body>main>section:nth-child(3)>img{
-    width: 1150px;
-    height: 500px;
+    width: 69%;
+    height:57%;
     position: relative;
     z-index: 1;
     left: 280px;
