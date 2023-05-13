@@ -342,68 +342,68 @@ body>main>section:nth-child(2)>article>div:nth-child(5)>h4{
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(1){
     top: 0;
-    left: 13px;
-    font-size: 22px;
+    left: 2%;
+    font-size: 145%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(2){
-    top: 28px;
-    left: 13px;
+    top:12%;
+    left: 2%;
     opacity: .5;
-    font-size: 20px;
+    font-size: 120%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(3){
-    top: 83px;
-    left: 13px;
-    font-size: 22px;
+    top: 32%;
+    left: 2%;
+    font-size: 145%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(4){
-    top: 111px;
-    left: 13px;
+    top: 44%;
+    left: 2%;
     opacity: .5;
-    font-size: 20px;
+    font-size: 120%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(5){
-    top: 164px;
-    left: 13px;
-    font-size: 22px;
+    top: 62%;
+    left: 2%;
+    font-size: 145%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(6){
-    top: 189px;
-    left: 13px;
+    top: 73%;
+    left: 2%;
     opacity: .5;
-    font-size: 20px;
+    font-size: 120%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(7){
-    left: 400px;
-    font-size: 22px;
+    left: 62%;
+    font-size: 145%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(8){
-    top: 28px;
-    left: 400px;
+    top: 12%;
+    left: 62%;
     opacity: .5;
-    font-size: 20px;
+    font-size: 120%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(9){
-    top: 83px;
-    left: 400px;
-    font-size: 22px;
+    top: 32%;
+    left: 62%;
+    font-size: 145%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(10){
-    top: 111px;
-    left: 400px;
+    top: 43%;
+    left: 62%;
     opacity: .5;
-    font-size: 20px;
+    font-size: 120%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(11){
-    top: 164px;
-    left: 400px;
-    font-size: 22px;
+    top: 62%;
+    left: 62%;
+    font-size: 145%;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(12){
-    top: 189px;
-    left: 400px;
+    top: 73%;
+    left: 62%;
     opacity: .5;
-    font-size: 20px;
+    font-size: 120%;
 }
 
 /*Skill Styles*/
