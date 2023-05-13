@@ -108,33 +108,33 @@ body>main>section:nth-child(1)>aside>img{
 body>main>section:nth-child(1)>article>h4:nth-child(1){
     color: white;
     position: absolute;
-    top:190px;
-    left: 96px;
+    top:21%;
+    left:11%;
     font-size:400%;
 }
 body>main>section:nth-child(1)>article>h4:nth-child(2){
     /*color: rgba(0, 168, 255, 1);*/
     color: #1B9CFC;
     position: absolute;
-    top:190px;
-    left: 210px;
+    top:21%;
+    left: 26%;
     font-size: 400%;
 }
 body>main>section:nth-child(1)>article>h4:nth-child(3){
     /*color: rgba(0, 168, 255, 1);*/
     color: white;
     position: absolute;
-    top:268px;
-    left: 96px;
+    top:29%;
+    left: 11%;
     font-size:400%;
 }
 
 body>main>section:nth-child(1)>article>h4:nth-child(4){
     /*color: rgba(0, 168, 255, 1);*/
-    color: #1B9CFC;
+    color: white;
     position: absolute;
-    top:268px;
-    left: 150px;
+    top:29%;
+    left:20%;
     font-size: 400%;
 }
 
@@ -142,7 +142,7 @@ body>main>section:nth-child(1)>article>p{
     /*color: rgba(0, 168, 255, 1);*/
     color: white;
     position: absolute;
-    top:350px;
+    top:30%;
     left: 96px;
     font-size: 200%;
     font-family:Arial;
@@ -152,22 +152,22 @@ body>main>section:nth-child(1)>article>p{
 
     color: white;
     position: absolute;
-    top:350px;
+    top:37%;
     left: 96px;
-    font-size: 19px;
+    font-size:130%;
     /*font-family:Optima;*/
     /*opacity: .5;*/
     font-family:"Tsukushi A Round Gothic";
 }
 
 body>main>section:nth-child(1)>article>div{
-    width: 173px;
-    height: 58px;
+    width: 21%;
+    height: 6.3%;
     background-color: #1B9CFC;
     border-radius: 30px;
     position: absolute;
-    top: 70px;
-    left: 10px;
+    top: 8%;
+    left: 3%;
     right: 490px;
     bottom: 0;
     margin: auto;
@@ -954,11 +954,11 @@ body>main>section:nth-child(5)>aside>form>button{
 }
 body>main>section:nth-child(5)>section{
     position: absolute;
-    width: 1600px;
-    height: 350px;
+    width: 95%;
+    height: 10%;
     background: url("../image/mapNew.jpg");
     bottom: 0px;
-    left: 36px;
+    left: 10px;
 }
 footer{
     height: 120px;
