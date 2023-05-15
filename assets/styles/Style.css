@@ -565,6 +565,7 @@ body>main>section>.cat{
     background-color: white;
     border: 2px black;
     top: -7%;
+    box-shadow: 5px 5px 5px  rgba(152, 210, 240, 1)
 }
 body>main>section>div:nth-child(5){
     left: 4.2%;
