@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <title>Iman Adithya | Portfolio</title>
     <!--<base href="https://imanadithya.github.io/MyPortfolio/">-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <meta name="keywords" content="Iman Adithya,portfolio,ijse">
     <meta name="description" content="Hey , I am Iman Adithya. I'am Professional Software Developer,Learn more About me.">
     <meta name="author" content="Iman Adithya">
@@ -37,14 +42,14 @@
         <section>
             <article>
                 <h4 id="home">I'm</h4>
-                <h4>Iman Adithya</h4>
-                <h4>a</h4>
-                <h4>Devoloper</h4>
-                <p> Always new beginnings can move the Business forward.A user<br>
+                <h4  data-aos="fade-right" data-aos-duration="2000">Iman Adithya</h4>
+                <h4  data-aos="fade-right" data-aos-duration="2300">a</h4>
+                <h4  data-aos="fade-right" data-aos-duration="3000">Devoloper</h4>
+                <p data-aos="fade-right" data-aos-duration="2300"> Always new beginnings can move the Business forward.A user<br>
                     experience is required before service.Now is a great opportunity<br>
                     To work with me and move your brand forward.
                 </p>
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="2000">
                     <p>VIEW WORKS</p>
                     <div>
                         <div><img src="assets/image/ArrowR.png" alt=""></div>
@@ -52,7 +57,7 @@
                      </div>
             </article>
             <aside>
-                <img src="assets/image/Group%204.png" alt="img" height="800px" width="775px">
+                <img src="assets/image/Group%204.png" alt="img" height="800px" width="775px" data-aos="zoom-in-left" data-aos-duration="2300">
             </aside>
             <img src="assets/image/facebook.png" alt="facebook">
             <img src="assets/image/insta.png" alt="instagram">
@@ -60,11 +65,13 @@
             <img src="assets/image/linkdin.png" alt="linkdin">
         </section>
         <section>
-            <p id="About">ABOUT ME</p>
-            <p>Know Me More</p>
-            <div></div>
+            <p id="About" data-aos="fade-right" style="opacity:0.1" data-aos-duration="2300">ABOUT ME</p>
+            <p data-aos="fade-left" data-aos-duration="2300">Know Me More</p>
+            <div data-aos="fade-down" data-aos-duration="2300"></div>
             <aside>
-                <img src="assets/image/aboutP.png" alt="about">
+                <img src="assets/image/aboutP.png" alt="about" data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                     data-aos-duration="2000">
             </aside>
             <article>
                 <p>Im here with 1+ years of user<br> experince</p>
@@ -214,6 +221,11 @@
         <h6>Condition and terms</h6>
         <h6>Privacy and policy</h6>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
