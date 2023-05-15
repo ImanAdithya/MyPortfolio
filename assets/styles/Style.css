@@ -430,6 +430,14 @@ body>main>section:nth-child(3)>p:nth-child(2){
     font-weight: bold;
     font-family: "Avenir Next";
 }
+body>main>section:nth-child(3)>div:nth-child(6){
+    position: absolute;
+    top: 8.5%;
+    left: 48%;
+    width: 5%;
+    height: 0.5%;
+    background-color: dodgerblue;
+}
 body>main>section:nth-child(3)>div:nth-child(3) {
     position: absolute;
     width: 50vw;
@@ -482,7 +490,6 @@ body>main>section:nth-child(3)>img{
     left: 17%;
     top: 29%;
 }
-
 
 /*Service Styles*/
 body>main>section:nth-child(4){
@@ -736,8 +743,8 @@ body>main>section>section:nth-child(8)>div:nth-child(4)>h4{
     margin-top: 0;
     margin-bottom: 0;
 }
+/*projects Styles*/
 
-/*Contact style*/
 body>main>section:nth-child(5){
     position: relative;
     width: 100vw;
@@ -745,6 +752,7 @@ body>main>section:nth-child(5){
     background-color: rgba(241, 251, 255, 0.54);
     margin-right: 10px;
 }
+
 body>main>section:nth-child(5)>h1:nth-child(1){
     margin-top: 0;
     position: absolute;
@@ -755,7 +763,123 @@ body>main>section:nth-child(5)>h1:nth-child(1){
     opacity:.1;
     font-family: "Avenir Next";
 }
+
 body>main>section:nth-child(5)>h3:nth-child(2){
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    font-size: 220%;
+    font-weight: bold;
+    font-family: "Avenir Next";
+    left: 46%;
+    top: 5%;
+}
+body>main>section:nth-child(5)>div:nth-child(3){
+    position: absolute;
+    width: 5%;
+    height: 0.5%;
+    background-color: #1B9CFC;
+    top: 8.5%;
+    right: 46%;
+}
+body>main>section:nth-child(5)>h5:nth-child(4){
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    font-size: 120%;
+    left: 40%;
+    top: 18%;
+    display: inline-block;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(5)>h5:nth-child(5){
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    font-size: 120%;
+    left: 44%;
+    top: 18%;
+    display: inline-block;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(5)>h5:nth-child(6){
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    font-size: 120%;
+    left: 47%;
+    top: 18%;
+    display: inline-block;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(5)>h5:hover{
+    color: dodgerblue;
+}
+body>main>section:nth-child(5)>h5:nth-child(4):hover{
+    font-size: 160%;
+}
+body>main>section:nth-child(5)>div:nth-child(7){
+    position: relative;
+    width: 77%;
+    height: 68%;
+    top: 22%;
+    left: 12%;
+}
+body>main>section:nth-child(5)>div:nth-child(7)>img:nth-child(1){
+    position: relative;
+    width: 40%;
+    height: 45%;
+    left: 8%;
+    top: -5%;
+    box-shadow: 10px 10px 10px  lightblue
+}
+body>main>section:nth-child(5)>div:nth-child(7)>img:nth-child(2){
+    position: relative;
+    width: 40%;
+    height: 50%;
+    left: -31%;
+    top: 50%;
+    box-shadow: 10px 10px 10px  lightblue
+}
+body>main>section:nth-child(5)>div:nth-child(7)>img:nth-child(3){
+    position: relative;
+    width: 20%;
+    height: 77%;
+    top: -62%;
+    left: 50%;
+    box-shadow: 10px 10px 10px  lightblue
+
+}
+body>main>section:nth-child(5)>div:nth-child(7)>img:nth-child(4){
+    position: relative;
+    width: 22%;
+    height: 90%;
+    top: -49%;
+    left: 51%;
+    box-shadow: 10px 10px 10px  lightblue
+}
+
+
+
+/*Contact style*/
+body>main>section:nth-child(6){
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(241, 251, 255, 0.54);
+    margin-right: 10px;
+}
+body>main>section:nth-child(6)>h1:nth-child(1){
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right:33%;
+    font-size: 750%;
+    font-weight: bold;
+    opacity:.1;
+    font-family: "Avenir Next";
+}
+body>main>section:nth-child(6)>h3:nth-child(2){
     margin-top: 0;
     margin-bottom: 0;
     position: absolute;
@@ -765,7 +889,7 @@ body>main>section:nth-child(5)>h3:nth-child(2){
     left: 44%;
     top: 5%;
 }
-body>main>section:nth-child(5)>div:nth-child(3){
+body>main>section:nth-child(6)>div:nth-child(3){
     position: absolute;
     width: 5%;
     height: 0.5%;
@@ -773,39 +897,39 @@ body>main>section:nth-child(5)>div:nth-child(3){
     top: 8.5%;
     right: 47%;
 }
-body>main>section:nth-child(5)>article:nth-child(4){
+body>main>section:nth-child(6)>article:nth-child(4){
     position: relative;
     height: 100%;
     width: 45%;
     top: 0;
     left: 0;
 }
-body>main>section:nth-child(5)>aside:nth-child(5){
+body>main>section:nth-child(6)>aside:nth-child(5){
     position: absolute;
     width: 55%;
     height: 100%;
     top: 0;
     right: 0;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>div{
+body>main>section:nth-child(6)>article:nth-child(4)>div{
     width: 13%;
     height: 10%;
     border-radius: 100%;
     background-color:rgba(36, 61, 125, 1);
     position: absolute;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(1){
+body>main>section:nth-child(6)>article:nth-child(4)>div:nth-child(1){
     left: 10%;
     top: 22%;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(1)>img{
+body>main>section:nth-child(6)>article:nth-child(4)>div:nth-child(1)>img{
     width: 41%;
     height: 47%;
     position: absolute;
     left: 29%;
     top: 27%;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>h3:nth-child(2){
+body>main>section:nth-child(6)>article:nth-child(4)>h3:nth-child(2){
     margin-bottom: 0;
     margin-top: 0;
     position: absolute;
@@ -814,7 +938,7 @@ body>main>section:nth-child(5)>article:nth-child(4)>h3:nth-child(2){
     font-size: 200%;
     font-family: "Avenir Next";
 }
-body>main>section:nth-child(5)>article:nth-child(4)>h4:nth-child(3){
+body>main>section:nth-child(6)>article:nth-child(4)>h4:nth-child(3){
     margin-bottom: 0;
     margin-top: 0;
     position: absolute;
@@ -825,18 +949,18 @@ body>main>section:nth-child(5)>article:nth-child(4)>h4:nth-child(3){
     opacity: 0.5;
 
 }
-body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(4){
+body>main>section:nth-child(6)>article:nth-child(4)>div:nth-child(4){
     left: 10%;
     top: 37%;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(4)>img{
+body>main>section:nth-child(6)>article:nth-child(4)>div:nth-child(4)>img{
     width: 41%;
     height: 32%;
     position: absolute;
     left: 29%;
     top: 35%;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>h3:nth-child(5){
+body>main>section:nth-child(6)>article:nth-child(4)>h3:nth-child(5){
     margin-bottom: 0;
     margin-top: 0;
     position: absolute;
@@ -845,7 +969,7 @@ body>main>section:nth-child(5)>article:nth-child(4)>h3:nth-child(5){
     font-size: 200%;
     font-family: "Avenir Next";
 }
-body>main>section:nth-child(5)>article:nth-child(4)>h4:nth-child(6){
+body>main>section:nth-child(6)>article:nth-child(4)>h4:nth-child(6){
     margin-bottom: 0;
     margin-top: 0;
     position: absolute;
@@ -855,18 +979,18 @@ body>main>section:nth-child(5)>article:nth-child(4)>h4:nth-child(6){
     font-family: "Avenir Next";
     opacity: 0.5;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(7){
+body>main>section:nth-child(6)>article:nth-child(4)>div:nth-child(7){
     left: 10%;
     top: 51%;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>div:nth-child(7)>img{
+body>main>section:nth-child(6)>article:nth-child(4)>div:nth-child(7)>img{
     width: 48%;
     height: 47%;
     position: absolute;
     left: 25%;
     top: 26%;
 }
-body>main>section:nth-child(5)>article:nth-child(4)>h3:nth-child(8){
+body>main>section:nth-child(6)>article:nth-child(4)>h3:nth-child(8){
     margin-bottom: 0;
     margin-top: 0;
     position: absolute;
@@ -875,7 +999,7 @@ body>main>section:nth-child(5)>article:nth-child(4)>h3:nth-child(8){
     font-size: 200%;
     font-family: "Avenir Next";
 }
-body>main>section:nth-child(5)>article:nth-child(4)>h4:nth-child(9){
+body>main>section:nth-child(6)>article:nth-child(4)>h4:nth-child(9){
     margin-bottom: 0;
     margin-top: 0;
     position: absolute;
@@ -885,12 +1009,12 @@ body>main>section:nth-child(5)>article:nth-child(4)>h4:nth-child(9){
     font-family: "Avenir Next";
     opacity: 0.5;
 }
-body>main>section:nth-child(5)>aside>form{
+body>main>section:nth-child(6)>aside>form{
     position: relative;
     top: 22%;
 
 }
-body>main>section:nth-child(5)>aside>form>#txtName{
+body>main>section:nth-child(6)>aside>form>#txtName{
     width: 38%;
     height: 22%;
     border-radius: 8px;
@@ -898,7 +1022,7 @@ body>main>section:nth-child(5)>aside>form>#txtName{
     position: absolute;
 
 }
-body>main>section:nth-child(5)>aside>form>#txtEmail{
+body>main>section:nth-child(6)>aside>form>#txtEmail{
     width: 38%;
     height: 22%;
     border-radius: 8px;
@@ -907,7 +1031,7 @@ body>main>section:nth-child(5)>aside>form>#txtEmail{
     top: 0;
     left: 40%;
 }
-body>main>section:nth-child(5)>aside>form>#txtSubject{
+body>main>section:nth-child(6)>aside>form>#txtSubject{
     width: 38%;
     height: 22%;
     border-radius: 8px;
@@ -916,7 +1040,7 @@ body>main>section:nth-child(5)>aside>form>#txtSubject{
     top: 32%;
     left: 40%;
 }
-body>main>section:nth-child(5)>aside>form>#txtPhone{
+body>main>section:nth-child(6)>aside>form>#txtPhone{
     width: 38%;
     height: 22%;
     border-radius: 8px;
@@ -925,7 +1049,7 @@ body>main>section:nth-child(5)>aside>form>#txtPhone{
     top: 33%;
 
 }
-body>main>section:nth-child(5)>aside>form>#textArea{
+body>main>section:nth-child(6)>aside>form>#textArea{
     width: 78%;
     height: 105%;
     border-radius: 8px;
@@ -933,7 +1057,7 @@ body>main>section:nth-child(5)>aside>form>#textArea{
     position: absolute;
     top:65%;
 }
-body>main>section:nth-child(5)>aside>form>button{
+body>main>section:nth-child(6)>aside>form>button{
     width: 20%;
     height: 27%;
     background-color: rgba(0, 168, 255, 1);
@@ -945,7 +1069,7 @@ body>main>section:nth-child(5)>aside>form>button{
     top: 180%;
     font-family: "Avenir Next";
 }
-body>main>section:nth-child(5)>section{
+body>main>section:nth-child(6)>section{
     position: relative;
     width: 96%;
     height: 35%;
