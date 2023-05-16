@@ -307,22 +307,14 @@ body>main>section:nth-child(2)>article>p:nth-child(1){
     top: 150px;
     font-size: 250%;
     font-family:"Toppan Bunkyu Gothic";
-
     overflow: hidden;
     white-space: nowrap;
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: typing 4.5s steps(40, end), blink-caret .75s step-end infinite;
-
+    animation: typing 10s forwards;
 }
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
 }
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-}
-
 body>main>section:nth-child(2)>article>p:nth-child(2){
     position: relative;
     left: 0;
