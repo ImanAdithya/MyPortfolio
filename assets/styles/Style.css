@@ -15,7 +15,7 @@ header>p{
     color: white;
     position: absolute;
     /*font-family:"Tsukushi A Round Gothic";*/
-    font-family:"Toppan Bunkyu Gothic";
+    font-family: "BM Hanna Pro";
     font-size: 30px;
     margin-top: 12px;
     margin-left: 15px;
@@ -38,9 +38,7 @@ header>nav>ul>li>a{
     color: white;
     margin-left: 9px;
     font-weight: bold;
-    /*font-family:"Tsukushi A Round Gothic";*/
-    /*font-family: "Roboto Light";*/
-    font-family:"Toppan Bunkyu Gothic"
+    font-family: "BM Hanna Pro";
 }
 
 header>nav>div{
