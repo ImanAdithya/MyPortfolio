@@ -11,15 +11,61 @@ header{
 
 }
 
+/*color glowing effect*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+:root {
+    /*--var-color: rgb(0, 238, 255);*/
+    /*--var-color: #44BCFF;*/
+    --var-color:white;
+}
+
+@keyframes flicker {
+    0% {
+        filter: blur(5px) brightness(1);
+    }
+    3% {
+        filter: blur(5px) brightness(0);
+    }
+    6% {
+        filter: blur(5px) brightness(0);
+    }
+    7% {
+        filter: blur(5px) brightness(1);
+    }
+    8% {
+        filter: blur(5px) brightness(0);
+    }
+    9% {
+        filter: blur(5px) brightness(1);
+    }
+    10% {
+        filter: blur(5px) brightness(0);
+    }
+    20% {
+        filter: blur(5px) brightness(1);
+    }
+    50% {
+        filter: blur(5px) brightness(1);
+    }
+    99% {
+        filter: blur(5px) brightness(0);
+    }
+    100% {
+        filter: blur(5px) brightness(1);
+    }
+}
+/*end color glowing effect*/
+
 header>p{
-    color: white;
     position: absolute;
     /*font-family:"Tsukushi A Round Gothic";*/
     font-family: "BM Hanna Pro";
     font-size: 30px;
     margin-top: 12px;
     margin-left: 15px;
+    color: white;
 }
+
 
 header>nav>ul{
     position: absolute;
@@ -100,6 +146,7 @@ body>main>section:nth-child(1)>article>h3{
     margin-top: 0px;
 }
 body>main>section:nth-child(1)>article>h4{
+    font-family: GungSeo;
     margin-top: 0px;
 }
 
@@ -112,7 +159,7 @@ body>main>section:nth-child(1)>aside>img{
     }
 
 body>main>section:nth-child(1)>article>h4:nth-child(1){
-    color: white;
+    color: #00A8FF;
     position: absolute;
     top:21%;
     left:11%;
@@ -120,15 +167,24 @@ body>main>section:nth-child(1)>article>h4:nth-child(1){
 }
 body>main>section:nth-child(1)>article>h4:nth-child(2){
     /*color: rgba(0, 168, 255, 1);*/
-    color: #1B9CFC;
+    /*color: #1B9CFC;*/
+    color: var(--var-color);
     position: absolute;
     top:21%;
     left: 26%;
     font-size: 400%;
 }
+body>main>section:nth-child(1)>article>h4:nth-child(2)::before{
+    position: absolute;
+    content: attr(data-text);
+    text-shadow: 0px 0px 20px var(--var-color);
+    filter: blur(10px) brightness(0);
+    animation: flicker 3s linear forwards;
+    animation-delay: 2s;
+}
 body>main>section:nth-child(1)>article>h4:nth-child(3){
-    /*color: rgba(0, 168, 255, 1);*/
-    color: white;
+    color: rgba(0, 168, 255, 1);
+    /*color: white;*/
     position: absolute;
     top:29%;
     left: 11%;
@@ -136,8 +192,9 @@ body>main>section:nth-child(1)>article>h4:nth-child(3){
 }
 
 body>main>section:nth-child(1)>article>h4:nth-child(4){
-    color: rgba(0, 168, 255, 1);
-    /*color: white;*/
+    /*color: rgba(0, 168, 255, 1);*/
+    color: white;
+    color: var(--var-color);
     position: absolute;
     top:29%;
     left:20%;
@@ -145,6 +202,14 @@ body>main>section:nth-child(1)>article>h4:nth-child(4){
     overflow: hidden;
     white-space: nowrap;
     animation: typing 6s forwards;
+}
+body>main>section:nth-child(1)>article>h4:nth-child(4)::before{
+    position: absolute;
+    content: attr(data-text);
+    text-shadow: 0px 0px 20px var(--var-color);
+    filter: blur(10px) brightness(0);
+    animation: flicker 3s linear forwards;
+    animation-delay: 2s;
 }
 @keyframes typing {
     from { width: 0 }
@@ -249,13 +314,17 @@ body>main>section:nth-child(1)>img:nth-child(6){
     bottom: 40px;
 }
 
+
+
+
+
+/* REPAIR SECTION =================================================================================*/
 /*About Styles*/
 body>main>section:nth-child(2){
     position: relative;
     width: 98vw;
     height: 95vh;
     background-color: rgba(241, 251, 255, 0.54);
-    margin-right: 10px;
 }
 body>main>section:nth-child(2)>p:nth-child(1){
     margin-top: 0;
@@ -268,7 +337,7 @@ body>main>section:nth-child(2)>p:nth-child(1){
     font-family: "Avenir Next";
 }
 body>main>section:nth-child(2)>aside{
-    width:33%;
+    width:37%;
     height: 105%;
     position: absolute;
     top: 0;
@@ -276,7 +345,7 @@ body>main>section:nth-child(2)>aside{
 }
 
 body>main>section:nth-child(2)>article{
-    width: 68vw;
+    width: 63vw;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -301,10 +370,10 @@ body>main>section:nth-child(2)>div:nth-child(3) {
 }
 
 body>main>section:nth-child(2)>aside>img{
-    width: 90%;
-    height: 75%;
+    width: 85%;
+    height: 77%;
     position: absolute;
-   bottom: 50px;
+   bottom: 10%;
     left: 0;
 }
 body>main>section:nth-child(2)>article>p:nth-child(1){
@@ -315,7 +384,7 @@ body>main>section:nth-child(2)>article>p:nth-child(1){
     font-family:"Toppan Bunkyu Gothic";
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 10s forwards;
+    animation: typing 20s forwards ;
 }
 @keyframes typing {
     from { width: 0 }
@@ -324,7 +393,7 @@ body>main>section:nth-child(2)>article>p:nth-child(1){
 body>main>section:nth-child(2)>article>p:nth-child(2){
     position: relative;
     left: 0;
-    top: 13%;
+    top: 14%;
     font-size: 120%;
     font-family:"Toppan Bunkyu Gothic";
     opacity: .7;
@@ -332,96 +401,166 @@ body>main>section:nth-child(2)>article>p:nth-child(2){
 body>main>section:nth-child(2)>article>p:nth-child(3){
     position: relative;
     left: 0;
-    top:13%;
+    top: 14%;
     font-size: 120%;
     font-family:"Toppan Bunkyu Gothic";
     opacity: .7;
 }
-body>main>section:nth-child(2)>article>p:nth-child(4){
+body>main>section:nth-child(2)>article>div:nth-child(4){
+    width: 67%;
+    height: 4%;
     position: relative;
-    left: 0;
-    top:13%;
-    font-size: 120%;
+    top: 18%;
+    left: 10%;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div:nth-child(1)>img{
+    width: 20%;
+    height: 72%;
+    position: relative;
+    top: 5%;
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div:nth-child(1)>h5{
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 20%;
+    bottom: 39%;
+    font-size: 140%;
+    position: absolute;
+    font-family: "PingFang SC";
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div:nth-child(1)>h6{
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 20%;
+    bottom: 25%;
+    font-size: 80%;
+    position: relative;
     font-family:"Toppan Bunkyu Gothic";
-    opacity: .7;
+    opacity: .5;
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div:nth-child(2)>img{
+    width: 20%;
+    height: 68%;
+    position: relative;
+    top: 9.5%;
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div:nth-child(2)>h5{
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 23%;
+    bottom: 44%;
+    font-size: 140%;
+    position: absolute;
+    font-family: "PingFang SC";
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div:nth-child(2)>h6{
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 23%;
+    bottom: 23%;
+    font-size: 80%;
+    position: relative;
+    font-family:"Toppan Bunkyu Gothic";
+    opacity: .5;
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div:nth-child(3)>img{
+    width: 20%;
+    height: 68%;
+    position: relative;
+    top: 9.5%;
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div:nth-child(3)>h5{
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 22.5%;
+    bottom: 46%;
+    font-size: 140%;
+    position: absolute;
+    font-family: "PingFang SC";
+}
+body>main>section:nth-child(2)>article>div:nth-child(4)>div:nth-child(3)>h6{
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 23%;
+    bottom: 23%;
+    font-size: 80%;
+    position: relative;
+    font-family:"Toppan Bunkyu Gothic";
+    opacity: .5;
 }
 body>main>section:nth-child(2)>article>div:nth-child(5){
+    width: 44%;
+    height: 5.7%;
     position: relative;
-    width:56%;
-    height:27%;
-    background-color:rgba(247, 250, 252, 1);
-    top: 15%;
-    border-radius: 30px;
-    border: 1px solid darkblue;
+    top: 22%;
+    left: 20%;
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4{
+body>main>section:nth-child(2)>article>div:nth-child(5)>div{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>div:nth-child(1)>img{
+    width: 20%;
+    height: 75%;
+    position: relative;
+    top: 12.5%;
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>div:nth-child(1)>h5{
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 20%;
+    bottom: 42%;
+    font-size: 140%;
     position: absolute;
-    /*display: inline-block;*/
+    font-family: "PingFang SC";
 }
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(1){
-    top: 0;
-    left: 2%;
-    font-size: 145%;
-}
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(2){
-    top:12%;
-    left: 2%;
+body>main>section:nth-child(2)>article>div:nth-child(5)>div:nth-child(1)>h6{
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 21%;
+    bottom: 23%;
+    font-size: 80%;
+    position: relative;
+    font-family:"Toppan Bunkyu Gothic";
     opacity: .5;
-    font-size: 120%;
 }
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(3){
-    top: 32%;
+body>main>section:nth-child(2)>article>div:nth-child(5)>div:nth-child(2)>img{
+    width: 18%;
+    height: 70%;
+    position: relative;
+    top: 12.5%;
     left: 2%;
-    font-size: 145%;
 }
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(4){
-    top: 44%;
-    left: 2%;
+body>main>section:nth-child(2)>article>div:nth-child(5)>div:nth-child(2)>h5{
+    margin-bottom: 0;
+    margin-top: 0;
+    /*left: 62.5%;*/
+    left: 23%;
+    /*bottom: 33%;*/
+    bottom: 43%;
+    font-size: 140%;
+    position: absolute;
+    font-family: "PingFang SC";
+}
+body>main>section:nth-child(2)>article>div:nth-child(5)>div:nth-child(2)>h6{
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 23%;
+    bottom: 21%;
+    font-size: 80%;
+    position: relative;
+    font-family:"Toppan Bunkyu Gothic";
     opacity: .5;
-    font-size: 120%;
-}
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(5){
-    top: 62%;
-    left: 2%;
-    font-size: 145%;
-}
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(6){
-    top: 73%;
-    left: 2%;
-    opacity: .5;
-    font-size: 120%;
-}
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(7){
-    left: 62%;
-    font-size: 145%;
-}
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(8){
-    top: 12%;
-    left: 62%;
-    opacity: .5;
-    font-size: 120%;
-}
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(9){
-    top: 32%;
-    left: 62%;
-    font-size: 145%;
-}
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(10){
-    top: 43%;
-    left: 62%;
-    opacity: .5;
-    font-size: 120%;
-}
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(11){
-    top: 62%;
-    left: 62%;
-    font-size: 145%;
-}
-body>main>section:nth-child(2)>article>div:nth-child(5)>h4:nth-child(12){
-    top: 73%;
-    left: 62%;
-    opacity: .5;
-    font-size: 120%;
 }
 
 /*Skill Styles*/
