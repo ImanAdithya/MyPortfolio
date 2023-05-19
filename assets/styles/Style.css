@@ -245,8 +245,7 @@ body>main>section:nth-child(1)>article>div{
     border-radius: 30px;
     position: absolute;
     top: 8%;
-    left: 3%;
-    right: 490px;
+    left: 10%;
     bottom: 0;
     margin: auto;
     /*position: relative;*/
@@ -281,6 +280,13 @@ body>main>section:nth-child(1)>article>div>p{
     font-family: "Arial Hebrew Scholar";
     font-size: 14px;
 }
+body>main>section:nth-child(1)>article>img{
+    width: 20.5%;
+    height: 6.5%;
+    position: relative;
+    top: 51%;
+    left: 10%;
+}
 body>main>section:nth-child(1)>article>div>div>div>img{
     position: absolute;
     width:30px;
@@ -314,11 +320,6 @@ body>main>section:nth-child(1)>img:nth-child(6){
     bottom: 40px;
 }
 
-
-
-
-
-/* REPAIR SECTION =================================================================================*/
 /*About Styles*/
 body>main>section:nth-child(2){
     position: relative;
@@ -1237,6 +1238,8 @@ body>main>section:nth-child(6)>section{
     bottom: 36%;
     left: 2%;
 }
+
+
 footer{
     height: 120px;
     width: 100vw;
