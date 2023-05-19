@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case 01</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        div{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 80px;
+            background-color: #ff253a;
+            border-radius: 10px;
+            animation:testOne;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            /*animation-delay: 3s;*/
+            /*animation-fill-mode: backwards;*/
+        }
+
+
+
+        @keyframes testOne {
+            0% {
+                top: 0;
+                left: 0;
+                background-color: black;
+                transform: rotate(0deg);
+            }
+            25% {
+                top: 0;
+                left:90%;
+                background-color: grey;
+                transform: rotate(180deg);
+            }
+            50% {
+                top: 90%;
+                left: 90%;
+                background-color: dodgerblue;
+                transform: rotate(0deg);
+            }
+
+            75% {
+                top: 90%;
+                left: 0;
+                background-color: purple;
+                transform: rotate(180deg);
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                background-color: deeppink;
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>

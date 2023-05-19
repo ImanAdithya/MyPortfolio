@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case 6</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+        main {
+            background: url("Cars/sky.jpg");
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        main > #city {
+            height: 31vh;
+            width: 400vw;
+            background: url("Cars/city.png");
+            position: absolute;
+            bottom: 25vh;
+        }
+
+        main > #road {
+            height: 25vh;
+            background: url("Cars/road.jpg");
+            position: absolute;
+            width: 400vw;
+            bottom: 0;
+        }
+        #road,#city{
+            animation-name:moveCityAndRoad ;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        main > #car {
+            width: 400px;
+            height: 150px;
+            position: absolute;
+            bottom: 20%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 2;
+            background: url("Cars/car.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #leftWheel, #rightWheel {
+            width: 70px;
+            height: 70px;
+            background: url("Cars/wheel.png");
+            background-size: cover;
+            position: absolute;
+            animation-name:wheels ;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        #rightWheel {
+            right: 48px;
+            bottom: -10px;
+
+        }
+
+        #leftWheel {
+            bottom: -10px;
+            left: 35px;
+        }
+
+        @keyframes wheels {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+        @keyframes moveCityAndRoad {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-75%);
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div id="city"></div>
+    <section id="car">
+        <div id="carBody"></div>
+        <div id="leftWheel"></div>
+        <div id="rightWheel"></div>
+    </section>
+    <div id="road"></div>
+</main>
+</body>
+</html>

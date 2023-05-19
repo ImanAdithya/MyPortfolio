@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CaseTwo</title>
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <style>
+    body{
+      background-color: green;
+    }
+
+    div{
+      width: 400px;
+      height: 400px;
+      border-radius: 100%;
+      background-color: grey;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    div>h2{
+      position: absolute;
+      color: white;
+      font-family: sans-serif;
+      font-size: 32px;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      display: inline-block;
+      width: max-content;
+      height: max-content;
+    }
+
+    div::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border: 15px solid white;
+      border-top: 15px solid red;
+      border-radius: 100%;
+    }
+
+    div:hover::after{
+      transform: rotate(360deg);
+      transition: 3s;
+    }
+
+    div:hover{
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+<div>
+  <h2>RWAD</h2>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case 03</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        div{
+            overflow: hidden;
+        }
+
+        div figure{
+            width: 400%;
+            position: relative;
+            margin: 0;
+            left: 0;
+            animation: 10s slider infinite;
+            animation-direction: alternate-reverse;
+
+        }
+        div figure img{
+            width: 25%;
+            float: left;
+        }
+
+        @keyframes slider {
+            0%{
+                left: 0;
+            }
+            20%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            45%{
+                left: -100%
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left: -200%;
+            }
+            75%{
+                left: -300%;
+            }
+            95%{
+                left: -300%;
+            }
+            100%{
+                left: -300%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <figure>
+        <img src="back.jpg">
+        <img src="back.jpg">
+        <img src="back.jpg">
+        <img src="back.jpg">
+    </figure>
+</div>
+</body>
+</html>

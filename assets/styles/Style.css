@@ -61,7 +61,6 @@ html{
 
 header>p{
     position: absolute;
-    /*font-family:"Tsukushi A Round Gothic";*/
     font-family: "BM Hanna Pro";
     font-size: 30px;
     margin-top: 12px;
@@ -165,8 +164,8 @@ body>main>section:nth-child(1)>aside>img{
     position: absolute;
     top: 40px;
     right: 40px;
-    width: 85%;
-    height: 80%;
+    width: 660px;
+    height: 700px;
     }
 
 body>main>section:nth-child(1)>article>h4:nth-child(1){
@@ -309,7 +308,7 @@ body>main>section:nth-child(1)>article>div>div>div>img{
     margin: auto;
 }
 body>main>section:nth-child(1)>img{
-    width: 31px;
+    width: 39px;
     height: 31px;
     right: 4px;
     opacity: .7;
@@ -996,6 +995,9 @@ body>main>section:nth-child(5)>div:nth-child(7){
     height: 68%;
     top: 22%;
     left: 12%;
+}
+body>main>section:nth-child(5)>h5:nth-child(5)>a{
+    text-decoration: none;
 }
 body>main>section:nth-child(5)>div:nth-child(7)>img:nth-child(1){
     position: relative;
