@@ -10,6 +10,9 @@ header{
     top: 0;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /*color glowing effect*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
@@ -65,6 +68,13 @@ header>p{
     margin-left: 15px;
     color: white;
 }
+header>img{
+    position: relative;
+    width: 10%;
+    height: 35%;
+    top: 32%;
+    left: 1%;
+}
 
 
 header>nav>ul{
@@ -84,7 +94,8 @@ header>nav>ul>li>a{
     color: white;
     margin-left: 9px;
     font-weight: bold;
-    font-family: "BM Hanna Pro";
+    /*font-family: "Yuanti TC";*/
+    font-family: K2D;
 }
 
 header>nav>div{
@@ -99,7 +110,7 @@ header>nav>div{
     margin: auto;
 }
 header>nav>div>h4{
-    font-family:"Toppan Bunkyu Gothic";
+    font-family: K2D;
     color: white;
     position: absolute;
     top: 5px;
