@@ -125,7 +125,7 @@ body>main>section:nth-child(1){ /*main section*/
     width: 100vw;
     height: 95vh;
     /*background: url("../image/back.jpg");*/
-    background-size: 100vw 95vh;
+    background-size: 100vw 100vh;
     /*background-color: rgba(23, 39, 82, 1);*/
     background-color: rgba(7, 29, 66, 1);
     position: relative;
@@ -176,8 +176,6 @@ body>main>section:nth-child(1)>article>h4:nth-child(1){
     font-size:400%;
 }
 body>main>section:nth-child(1)>article>h4:nth-child(2){
-    /*color: rgba(0, 168, 255, 1);*/
-    /*color: #1B9CFC;*/
     color: var(--var-color);
     position: absolute;
     top:21%;
