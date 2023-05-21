@@ -40,7 +40,7 @@
 
     /*About me responsive*/
     body>main>section:nth-child(2){
-        width: 98vw;
+        width: 100vw;
         height: 70vh;
         background-color: rgba(241, 251, 255, 0.54);
     }

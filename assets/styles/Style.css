@@ -331,7 +331,7 @@ body>main>section:nth-child(1)>img:nth-child(6){
 /*About Styles*/
 body>main>section:nth-child(2){
     position: relative;
-    width: 98vw;
+    width: 100vw;
     height: 95vh;
     background-color: rgba(241, 251, 255, 0.54);
 }
@@ -912,8 +912,9 @@ body>main>section>section:nth-child(8)>div:nth-child(4)>h4{
     margin-top: 0;
     margin-bottom: 0;
 }
-/*projects Styles*/
 
+
+/*projects Styles*/
 body>main>section:nth-child(5){
     position: relative;
     width: 100vw;

@@ -93,6 +93,8 @@
     body>main>section:nth-child(2)>aside>img{
         height: 55%;
         width: 90%;
+        top: 18%;
+
     }
     body>main>section:nth-child(2)>article>p:nth-child(1){
         top: 110px;
@@ -276,8 +278,115 @@
     body>main>section>div:nth-child(6)>h4{
         font-size: 80%;
     }
-    body>main>section>div:nth-child(6)>p{
+    body>main>section>div:nth-child(6)>p {
         font-size: 58%;
+    }
+    body>main>section>div:nth-child(7)>h4{
+        font-size: 80%;
+    }
+    body>main>section>div:nth-child(7)>p{
+        font-size: 57%;
+    }
+    body>main>section>section:nth-child(8)>div:nth-child(1)>h3{
+        font-size:200%;
+    }
+
+    body>main>section>section:nth-child(8)>div:nth-child(1)>h4{
+        font-size: 90%;
+        left: 31%;
+    }
+    body>main>section>section:nth-child(8)>div:nth-child(2)>h3{
+        top: 15%;
+        font-size: 200%;
+    }
+    body>main>section>section:nth-child(8)>div:nth-child(2)>h4{
+        left: 28%;
+        font-size: 90%;
+    }
+    body>main>section>section:nth-child(8)>div:nth-child(3)>h3{
+        left: 56%;
+        font-size: 200%;
+    }
+    body>main>section>section:nth-child(8)>div:nth-child(3)>h4{
+        left: 34%;
+        font-size: 90%;
+    }
+    body>main>section>section:nth-child(8)>div:nth-child(4)>h3{
+        left: 40%;
+        font-size: 200%;
+    }
+    body>main>section>section:nth-child(8)>div:nth-child(4)>h4{
+        left: 35%;
+        top: 19%;
+        font-size: 90%;
+    }
+
+    /*projects Styles*/
+    body>main>section:nth-child(5){
+        position: relative;
+        width: 100vw;
+        height: 60vh;
+        background-color: rgba(241, 251, 255, 0.54);
+        margin-right: 10px;
+    }
+
+    body>main>section:nth-child(5)>h1:nth-child(1){
+        font-size: 400%;
+    }
+
+    body>main>section:nth-child(5)>h3:nth-child(2){
+        font-size: 112%;
+        left: 43%;
+    }
+    body>main>section:nth-child(5)>div:nth-child(3){
+        top: 7%;
+        right: 46%;
+    }
+    body>main>section:nth-child(5)>h5:nth-child(4){
+        font-size: 110%;
+        left: 35%;
+    }
+    body>main>section:nth-child(5)>h5:nth-child(5){
+        font-size: 110%;
+        left: 39%;
+    }
+    body>main>section:nth-child(5)>h5:nth-child(6){
+        font-size: 110%;
+        left: 42%;
+    }
+
+    /*Contact style*/
+    body>main>section:nth-child(6){
+        position: relative;
+        width: 100vw;
+        height: 90vh;
+        background-color: rgba(241, 251, 255, 0.54);
+        margin-right: 10px;
+    }
+    body>main>section:nth-child(6)>h1:nth-child(1){
+        right:33%;
+        font-size: 400%;
+    }
+    body>main>section:nth-child(6)>h3:nth-child(2){
+        font-size: 112%;
+        top: 2.8%;
+    }
+    body>main>section:nth-child(6)>div:nth-child(3){
+        height: 0.4%;
+        top: 4.9%;
+        right: 55%;
+    }
+    body>main>section:nth-child(6)>aside>form>button{
+        width: 36%;
+        height: 22%;
+        background-color: rgba(0, 168, 255, 1);
+        border-radius: 20px;
+        border: none;
+        color: white;
+        font-size: 130%;
+        position: absolute;
+        top: 180%;
+        font-family: "Avenir Next";
     }
 
 
