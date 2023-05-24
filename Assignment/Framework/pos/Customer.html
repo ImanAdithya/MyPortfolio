@@ -2,9 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Customer Form</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/CustomerStyle.css">
+
 </head>
 <body>
 
+<header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-warning fs-4" href="#" >SPORT ZONE</a>
+
+            <div class="col-3" id="navbarNavAltMarkup">
+                <div class="navbar-nav" >
+                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                    <a class="nav-link" href="Customer.html">CUSTOMER</a>
+                    <a class="nav-link" href="Item.html">ITEM</a>
+                    <a class="nav-link" href="PlaceOrder.html">PLACEORDER</a>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-warning">SIGN UP</button>
+
+        </div>
+    </nav>
+
+</header>
+
+<main>
+<!--        <section class="row justify-content-center">-->
+<!--            <div class="col-4 mt-5 pt-lg-5 h-100">-->
+<!--                <div class="p-4 h-75 w-100" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;border: 2px solid red">-->
+<!--                    <h4 style="color: orange" class="text-center p-lg-4">CUSTOMER MANAGE</h4>-->
+<!--                    <form>-->
+<!--                        <div class="mb-3">-->
+<!--                            <label for="exampleInputID" class="form-label" style="color: white">CUSTOMER ID</label>-->
+<!--                            <input type="text" class="form-control" id="exampleInputID" aria-describedby="emailHelp" >-->
+<!--                        </div>-->
+<!--                        <div class="mb-3 ">-->
+<!--                            <label for="exampleInputName" class="form-label"style="color: white">NAME</label>-->
+<!--                            <input type="text" class="form-control" id="exampleInputName">-->
+<!--                        </div>-->
+<!--                        <div class="mb-3 ">-->
+<!--                            <label for="exampleInputAddress" class="form-label"style="color: white">ADDRESS</label>-->
+<!--                            <input type="text" class="form-control" id="exampleInputAddress">-->
+<!--                        </div>-->
+<!--                        <div class="mb-3">-->
+<!--                            <label for="exampleInputContact" class="form-label"style="color: white">CONTACT</label>-->
+<!--                            <input type="text" class="form-control" id="exampleInputContact">-->
+<!--                        </div>-->
+
+<!--                       <div class="row justify-content-center">-->
+<!--                           <div class="col-6">-->
+<!--                               <div class=" justify-content-center ">-->
+<!--                                   <button type="button" class="btn btn-outline-warning col-10 mt-4 mx-5">SUBMIT</button>-->
+<!--                               </div>-->
+<!--                           </div>-->
+<!--                           <div class="col-6">-->
+
+<!--                               <div class="row justify-content-center">-->
+<!--                                   <button type="button" class="btn btn-outline-warning col-10 mt-4  mx-p my-3">UPDATE</button>-->
+<!--                               </div>-->
+
+<!--                           </div>-->
+<!--                       </div>-->
+
+<!--                    </form>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-6"></div>-->
+<!--        </section>-->
+
+    <section class="row p-4 m-0 object-fit-contain">
+        <div class="col-6 border-warning m-3 border rounded object-fit-contain">
+            <h5 class="text-warning text-center m-lg-3 pt-5" >CUSTOMER MANAGE</h5>
+            <form class="m-5">
+                <div class="mb-3">
+                    <label for="InputID" class="form-label text-white">CUSTOMER  ID</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="InputID" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="InputName" class="form-label text-white">NAME</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="InputName">
+                </div>
+                <div class="mb-3">
+                    <label for="inputAddress" class="form-label text-white">ADDRESS</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="inputAddress">
+                </div>
+                <div class="mb-3">
+                    <label for="inputContact" class="form-label text-white">CONTACT</label>
+                    <input type="tel" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring " id="inputContact">
+                </div>
+                <div class="row m-0 gap-2 mt-5">
+                    <button type="submit" class="btn btn-outline-warning  col">SAVE</button>
+                    <button type="submit" class="btn btn-outline-warning col">UPDATE</button>
+                </div>
+                <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
+                <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
+            </form>
+        </div>
+        <div class="col-5 border-white m-3  border-start">
+            <table class="table text-white">
+                <thead class="text-warning">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">ADDRESS</th>
+                    <th scope="col">CONTACT</th>
+                    <th scope="col">ACTION</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">C001</th>
+                    <td>Iman</td>
+                    <td>Weligama</td>
+                    <td>078715585</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">C002</th>
+                    <td>Ushan</td>
+                    <td>Matara</td>
+                    <td>078715585</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">C003</th>
+                    <td>Achintha</td>
+                    <td>Urubokka</td>
+                    <td>078715585</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+
 </body>
+
+
 </html>

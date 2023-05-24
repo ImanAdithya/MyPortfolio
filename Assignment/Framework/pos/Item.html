@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Form</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/ItemStyle.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-warning fs-4" href="#"  >SPORT ZONE</a>
+
+            <div class="col-3" id="navbarNavAltMarkup">
+                <div class="navbar-nav" >
+                    <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+                    <a class="nav-link" href="Customer.html">CUSTOMER</a>
+                    <a class="nav-link" href="Item.html">ITEM</a>
+                    <a class="nav-link" href="PlaceOrder.html">PLACEORDER</a>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-warning">SIGN UP</button>
+
+        </div>
+    </nav>
+</header>
+
+<main class="container-fluid">
+    <section class="row justify-content-center object-fit-contain">
+        <div class="col-6 m-4 border border-warning border rounded " >
+            <h5 class="m-3 pt-5 text-center text-warning">ITEM MANAGE</h5>
+
+            <form class="m-5">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">ITEM ID</label>
+                    <input type="email" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">DESCRIPTION</label>
+                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">UNIT PRICE</label>
+                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputUnitPrice">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">QUANTITY</label>
+                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputQty">
+                </div>
+
+                <div class="row mt-5 gap-2 m-1">
+                    <button type="submit" class="btn btn-outline-warning col">SAVE</button>
+                    <button type="submit" class="btn btn-outline-warning col">UPDATE </button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="col-5 m-4 border-start">
+            <table class="table text-white m-3">
+                <thead class="text-warning">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">DESCRIPTION</th>
+                    <th scope="col">UNIT PRICE</th>
+                    <th scope="col">QUANTITY</th>
+                    <th scope="col">ACTION</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">I001</th>
+                    <td>Badminton Racket</td>
+                    <td>10000.00</td>
+                    <td>1</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">I002</th>
+                    <td>Tenis Ball</td>
+                    <td>1200.00</td>
+                    <td>4</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">I003</th>
+                    <td>Volley BAll</td>
+                    <td>9000.00</td>
+                    <td>1</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+</body>
+</html>
