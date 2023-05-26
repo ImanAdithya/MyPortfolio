@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/CustomerStyle.css">
+    <link rel="stylesheet" href="assets/styles/ItemStyle.css">
+    <link rel="stylesheet" href="assets/styles/PlaceOrderStyle.css">
+</head>
+<body>
+<header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-warning fs-4" href="#" >SPORT ZONE</a>
+
+            <div class="col-3" id="navbarNavAltMarkup">
+                <div class="navbar-nav" >
+                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                    <a class="nav-link" href="Customer.html">CUSTOMER</a>
+                    <a class="nav-link" href="Item.html">ITEM</a>
+                    <a class="nav-link" href="PlaceOrder.html">PLACEORDER</a>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-warning">SIGN UP</button>
+
+        </div>
+    </nav>
+
+</header>
+
+<section id="Home">
+    <img src="assets/image/backgrond.jpg">
+</section>
+
+
+<main id="customer">
+    <!--        <section class="row justify-content-center">-->
+    <!--            <div class="col-4 mt-5 pt-lg-5 h-100">-->
+    <!--                <div class="p-4 h-75 w-100" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;border: 2px solid red">-->
+    <!--                    <h4 style="color: orange" class="text-center p-lg-4">CUSTOMER MANAGE</h4>-->
+    <!--                    <form>-->
+    <!--                        <div class="mb-3">-->
+    <!--                            <label for="exampleInputID" class="form-label" style="color: white">CUSTOMER ID</label>-->
+    <!--                            <input type="text" class="form-control" id="exampleInputID" aria-describedby="emailHelp" >-->
+    <!--                        </div>-->
+    <!--                        <div class="mb-3 ">-->
+    <!--                            <label for="exampleInputName" class="form-label"style="color: white">NAME</label>-->
+    <!--                            <input type="text" class="form-control" id="exampleInputName">-->
+    <!--                        </div>-->
+    <!--                        <div class="mb-3 ">-->
+    <!--                            <label for="exampleInputAddress" class="form-label"style="color: white">ADDRESS</label>-->
+    <!--                            <input type="text" class="form-control" id="exampleInputAddress">-->
+    <!--                        </div>-->
+    <!--                        <div class="mb-3">-->
+    <!--                            <label for="exampleInputContact" class="form-label"style="color: white">CONTACT</label>-->
+    <!--                            <input type="text" class="form-control" id="exampleInputContact">-->
+    <!--                        </div>-->
+
+    <!--                       <div class="row justify-content-center">-->
+    <!--                           <div class="col-6">-->
+    <!--                               <div class=" justify-content-center ">-->
+    <!--                                   <button type="button" class="btn btn-outline-warning col-10 mt-4 mx-5">SUBMIT</button>-->
+    <!--                               </div>-->
+    <!--                           </div>-->
+    <!--                           <div class="col-6">-->
+
+    <!--                               <div class="row justify-content-center">-->
+    <!--                                   <button type="button" class="btn btn-outline-warning col-10 mt-4  mx-p my-3">UPDATE</button>-->
+    <!--                               </div>-->
+
+    <!--                           </div>-->
+    <!--                       </div>-->
+
+    <!--                    </form>-->
+
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-6"></div>-->
+    <!--        </section>-->
+
+    <section class="row p-4 m-0 object-fit-contain">
+        <div class="col-6 border-warning m-3 border rounded object-fit-contain">
+            <h5 class="text-warning text-center m-lg-3 pt-5" >CUSTOMER MANAGE</h5>
+            <form class="m-5">
+                <div class="mb-3">
+                    <label for="InputID" class="form-label text-white">CUSTOMER  ID</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="InputID" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="InputName" class="form-label text-white">NAME</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="InputName">
+                </div>
+                <div class="mb-3">
+                    <label for="inputAddress" class="form-label text-white">ADDRESS</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="inputAddress">
+                </div>
+                <div class="mb-3">
+                    <label for="inputContact" class="form-label text-white">CONTACT</label>
+                    <input type="tel" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring " id="inputContact">
+                </div>
+                <div class="row m-0 gap-2 mt-5">
+                    <button type="submit" class="btn btn-outline-warning  col">SAVE</button>
+                    <button type="submit" class="btn btn-outline-warning col">UPDATE</button>
+                </div>
+                <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
+                <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
+            </form>
+        </div>
+        <div class="col-5 border-white m-3  border-start">
+            <table class="table text-white">
+                <thead class="text-warning">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">ADDRESS</th>
+                    <th scope="col">CONTACT</th>
+                    <th scope="col">ACTION</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">C001</th>
+                    <td>Iman</td>
+                    <td>Weligama</td>
+                    <td>078715585</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">C002</th>
+                    <td>Ushan</td>
+                    <td>Matara</td>
+                    <td>078715585</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">C003</th>
+                    <td>Achintha</td>
+                    <td>Urubokka</td>
+                    <td>078715585</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+
+<main class="container-fluid" id="item">
+    <section class="row justify-content-center object-fit-contain">
+        <div class="col-6 m-4 border border-warning border rounded " >
+            <h5 class="m-3 pt-5 text-center text-warning">ITEM MANAGE</h5>
+
+            <form class="m-5">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">ITEM ID</label>
+                    <input type="email" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">DESCRIPTION</label>
+                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">UNIT PRICE</label>
+                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputUnitPrice">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">QUANTITY</label>
+                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputQty">
+                </div>
+
+                <div class="row mt-5 gap-2 m-1">
+                    <button type="submit" class="btn btn-outline-warning col">SAVE</button>
+                    <button type="submit" class="btn btn-outline-warning col">UPDATE </button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="col-5 m-4 border-start">
+            <table class="table text-white m-3">
+                <thead class="text-warning">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">DESCRIPTION</th>
+                    <th scope="col">UNIT PRICE</th>
+                    <th scope="col">QUANTITY</th>
+                    <th scope="col">ACTION</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">I001</th>
+                    <td>Badminton Racket</td>
+                    <td>10000.00</td>
+                    <td>1</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">I002</th>
+                    <td>Tenis Ball</td>
+                    <td>1200.00</td>
+                    <td>4</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">I003</th>
+                    <td>Volley BAll</td>
+                    <td>9000.00</td>
+                    <td>1</td>
+                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+
+<main id="placeOrder">
+    <section class="row p-4 m-0">
+        <div class="col border-warning m-3 border rounded">
+            <h5 class="text-warning text-center m-lg-3 pt-2">PLACE ORDER FORM</h5>
+
+            <div class="row ">
+                <h6 class="text-warning">ORDER DETAILS</h6>
+                <form class=" me-3">
+                    <div class="row border-bottom border-white">
+                        <div class="mb-1 col">
+                            <label for="InputOID" class="form-label text-white">ORDER ID</label>
+                            <input type="text"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning"
+                                   id="InputOID" readonly>
+                        </div>
+                        <div class="mb-1 col mb-4">
+                            <label for="InputDate" class="form-label text-white">DATE</label>
+                            <input type="date"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring"
+                                   id="InputDate">
+                        </div>
+                    </div>
+
+                    <h6 class="text-warning mt-4">CUSTOMER DETAILS</h6>
+
+                    <div class="row border-bottom border-white">
+                        <div class="mb-1 col">
+                            <label for="selectCusId" class="form-label text-white">CUSTOMER ID</label>
+                            <select class="form-select bg-black text-warning focus-ring-warning focus-ring"
+                                    aria-label="Default select example" id="selectCusId">
+                                <option selected></option>
+                                <option value="1">C-001</option>
+                                <option value="2">C-002</option>
+                                <option value="3">C-003</option>
+                            </select>
+                        </div>
+                        <div class="mb-1 col mb-4">
+                            <label for="Name" class="form-label text-white">CUSTOMER NAME</label>
+                            <input type="text"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                                   id="Name" readonly>
+                        </div>
+                    </div>
+
+                    <h6 class="text-warning mt-4">ITEM DETAILS</h6>
+
+                    <div class="row">
+                        <div class="mb-1 col">
+                            <label for="selectItemId" class="form-label text-white">ITEM ID</label>
+                            <select class="form-select bg-black text-warning focus-ring-warning focus-ring"
+                                    aria-label="Default select example" id="selectItemId">
+                                <option selected></option>
+                                <option value="1">I001</option>
+                                <option value="2">I002</option>
+                                <option value="3">I003</option>
+                            </select>
+                        </div>
+                        <div class="mb-1 col mb-4">
+                            <label for="ItemName" class="form-label text-white">DESCRIPTION</label>
+                            <input type="text"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                                   id="ItemName" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-1 col">
+                            <label for="UnitPrice" class="form-label text-white">UNIT PRICE</label>
+                            <select class="form-select bg-black text-warning focus-ring-warning focus-ring"
+                                    aria-label="Default select example" id="UnitPrice">
+                                <option selected></option>
+                                <option value="1">I001</option>
+                                <option value="2">I002</option>
+                                <option value="3">I003</option>
+                            </select>
+                        </div>
+                        <div class="mb-1 col">
+                            <label for="QtyOnHnd" class="form-label text-white">QTY ON HAND</label>
+                            <input type="number"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                                   id="QtyOnHnd" readonly>
+                        </div>
+
+                        <div class="mb-1 col">
+                            <label for="Qty" class="form-label text-white">QTY</label>
+                            <input type="number"
+                                   class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                                   id="Qty">
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <button class="btn btn-outline-light container-fluid mt-5 mb-5" type="submit">ADD TO CART</button>
+        </div>
+
+        <div class="col m-3 ">
+            <div class="border rounded border-warning">
+                <h5 class="text-warning mt-4 mb-3 ms-2">CART</h5>
+                <table class="table text-white ">
+                    <thead class="text-warning">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">DESCRIPTION</th>
+                        <th scope="col">UNIT PRICE</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">TOTAL</th>
+                        <th scope="col">ACTION</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>BADMINTION-RACKET</td>
+                        <td>10000</td>
+                        <td>1</td>
+                        <td>15000</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-light">Edit</button>
+                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I-002</th>
+                        <td>TENIS BALL</td>
+                        <td>1200</td>
+                        <td>02</td>
+                        <td>2400</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-light">Edit</button>
+                            <button type="button" class="btn btn-outline-danger">Delete</button>
+                        </td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="row mt-5 border border-warning rounded">
+                <h5 class="text-warning  mt-3 mb-2">PURCHASE ORDER</h5>
+                <div class="row">
+                    <div class="mb-1 col">
+                        <label for="Total" class="form-label text-white">TOTAL</label>
+                        <input type="number"
+                               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                               id="Total" readonly>
+                    </div>
+
+                    <div class="mb-5 col text-warning">
+                        <label for="subTotal" class="form-label ">SUB TOTAL</label>
+                        <input type="number"
+                               class="form-control bg-black border-warning text-warning focus-ring-warning focus-ring mb-4 rounded"
+                               id="subTotal" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="mb-1 col">
+                        <label for="cash" class="form-label text-white">CASH</label>
+                        <input type="number"
+                               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                               id="cash">
+                    </div>
+
+                    <div class="mb-1 col">
+                        <label for="discount" class="form-label text-white">DISCOUNT</label>
+                        <input type="number"
+                               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                               id="discount">
+                    </div>
+
+                    <div class="mb-1 col">
+                        <label for="balance" class="form-label text-white">BALANCE</label>
+                        <input type="number"
+                               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
+                               id="balance" readonly>
+                    </div>
+
+                </div>
+                <div class="row ms-1">
+                    <button class="btn btn-outline-warning mt-5 mb-5" type="submit">PURCHASE</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+
+</script>
+</body>
+</html>
