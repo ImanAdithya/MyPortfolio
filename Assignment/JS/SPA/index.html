@@ -21,10 +21,10 @@
 
             <div class="col-3" id="navbarNavAltMarkup">
                 <div class="navbar-nav" >
-                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
-                    <a class="nav-link" href="Customer.html">CUSTOMER</a>
-                    <a class="nav-link" href="Item.html">ITEM</a>
-                    <a class="nav-link" href="PlaceOrder.html">PLACEORDER</a>
+                    <a class="nav-link" aria-current="page" href="index.html" id="btnHome">HOME</a>
+                    <a class="nav-link"  id="btnCustomer">CUSTOMER</a>
+                    <a class="nav-link"  id="btnItem">ITEM</a>
+                    <a class="nav-link"  id="btnPlaceOrder">PLACEORDER</a>
                 </div>
             </div>
 
@@ -426,7 +426,39 @@
     </section>
 </main>
 <script>
+    document.getElementById("customer").style.display="none";
+    document.getElementById("item").style.display="none";
+    document.getElementById("placeOrder").style.display="none";
+    //document.getElementById("placeOrder").style.display="none";
 
+    document.getElementById("btnCustomer").addEventListener("click",function (){
+        document.getElementById("Home").style.display="none";
+        document.getElementById("customer").style.display="block";
+        document.getElementById("item").style.display="none";
+        document.getElementById("placeOrder").style.display="none";
+    });
+
+    document.getElementById("btnItem").addEventListener("click",function (){
+        document.getElementById("Home").style.display="none";
+        document.getElementById("customer").style.display="none";
+        document.getElementById("item").style.display="block";
+        document.getElementById("placeOrder").style.display="none";
+    });
+
+
+    document.getElementById("btnPlaceOrder").addEventListener("click",function (){
+        document.getElementById("Home").style.display="none";
+        document.getElementById("customer").style.display="none";
+        document.getElementById("item").style.display="none";
+        document.getElementById("placeOrder").style.display="block";
+    });
+
+    document.getElementById("btnHome").addEventListener("click",function (){
+        document.getElementById("Home").style.display="block";
+        document.getElementById("customer").style.display="none";
+        document.getElementById("item").style.display="none";
+        document.getElementById("placeOrder").style.display="none";
+    });
 </script>
 </body>
 </html>
