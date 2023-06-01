@@ -85,24 +85,24 @@
             <h5 class="text-warning text-center m-lg-3 pt-5" >CUSTOMER MANAGE</h5>
             <form class="m-5">
                 <div class="mb-3">
-                    <label for="InputID" class="form-label text-white">CUSTOMER  ID</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="InputID" readonly>
+                    <label for="cusID" class="form-label text-white">CUSTOMER  ID</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="cusID" >
                 </div>
                 <div class="mb-3">
-                    <label for="InputName" class="form-label text-white">NAME</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="InputName">
+                    <label for="cusName" class="form-label text-white">NAME</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="cusName">
                 </div>
                 <div class="mb-3">
-                    <label for="inputAddress" class="form-label text-white">ADDRESS</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="inputAddress">
+                    <label for="cusAddress" class="form-label text-white">ADDRESS</label>
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="cusAddress">
                 </div>
                 <div class="mb-3">
-                    <label for="inputContact" class="form-label text-white">CONTACT</label>
-                    <input type="tel" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring " id="inputContact">
+                    <label for="cusContact" class="form-label text-white">CONTACT</label>
+                    <input type="tel" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring " id="cusContact">
                 </div>
                 <div class="row m-0 gap-2 mt-5">
-                    <button type="submit" class="btn btn-outline-warning  col">SAVE</button>
-                    <button type="submit" class="btn btn-outline-warning col">UPDATE</button>
+                    <button type="button" class="btn btn-outline-warning  col" id="onActionSave">SAVE</button>
+                    <button type="button" class="btn btn-outline-warning col" name="onActionUpdate">UPDATE</button>
                 </div>
                 <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
                 <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
@@ -119,40 +119,67 @@
                     <th scope="col">ACTION</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">C001</th>
-                    <td>Iman</td>
-                    <td>Weligama</td>
-                    <td>078715585</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">C002</th>
-                    <td>Ushan</td>
-                    <td>Matara</td>
-                    <td>078715585</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">C003</th>
-                    <td>Achintha</td>
-                    <td>Urubokka</td>
-                    <td>078715585</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
+                <tbody id="tBodyID">
+
                 </tbody>
             </table>
         </div>
     </section>
 </main>
 
+
+<script>
+   document.getElementById('onActionSave').addEventListener("click",function(){
+       var cusID= document.getElementById("cusID").value;
+       var cusName= document.getElementById("cusName").value;
+       var cusAddress= document.getElementById("cusAddress").value;
+       var cusContact= document.getElementById("cusContact").value;
+       let button =document.createElement("button");
+       let buttton2=document.createElement("button");
+      button.style.borderColor="#ffa502";
+      button.style.color="#ffa502";
+      button.style.width="80px";
+      button.style.margin="5px";
+
+
+
+
+       // Get the table body element in which you want to add row
+       let table = document.getElementById("tBodyID");
+
+       // Create row element
+       let row = document.createElement("tr")
+
+       // Create cells
+       let c1 = document.createElement("td")
+       let c2 = document.createElement("td")
+       let c3 = document.createElement("td")
+       let c4 = document.createElement("td")
+       let c5 = document.createElement("td")
+
+
+
+
+       // Insert data to cells
+       c1.innerText = cusID;
+       c2.innerText = cusName;
+       c3.innerText = cusAddress;
+       c4.innerText = cusContact;
+       button.innerText= "DELETE";
+
+       // Append cells to row
+       row.appendChild(c1);
+       row.appendChild(c2);
+       row.appendChild(c3);
+       row.appendChild(c4);
+       row.appendChild(button);
+
+       // Append row to table body
+       table.appendChild(row)
+
+   });
+
+</script>
 
 </body>
 

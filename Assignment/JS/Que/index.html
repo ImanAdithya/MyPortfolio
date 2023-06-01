@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <style>
+        body{
+
+        }
+        section{
+            width: 1000px;
+            height: 320px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            background-color: #172752;
+        }
+
+        section>div{
+            height: 100px;
+            flex-grow: 1; /*section eke div smana kotas karanoX*/
+            border: 1px solid red;
+        }
+        section>div:first-child{
+            align-self: start;
+        }
+        section>div:last-child{
+            align-self: end;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<script>
+    let colors=["red","yellow","green","blue","deeppink","orange"];
+    //Arrays related method
+        //colors.push(); added to value the last index in the array
+        //colors.pop(); remove value the last index in the array
+        //colors.shift(); remove the fist value of the array
+        //colors.unshift(); added value the first index in the array
+        //colors.slice();get array range value
+        //colors.splice();remove middle value use range
+        //colors.length; find array length
+        //colors.indexOf(); get array index
+        //colors.reverse();reverse wenawa
+        //colors.sort();according
+
+    let divArray=document.querySelector("section").children;
+
+    // for (let i = 0; i <colors.length; i++) {
+    //     divArray[i].style.backgroundColor=colors[i];
+    // }
+
+
+    setInterval(function () {
+        for (let i = 0; i <colors.length; i++) {
+            divArray[i].style.backgroundColor=colors[i];
+        }
+
+
+        colors.unshift(colors[5]);
+        colors.pop();
+
+    },700)
+
+</script>
+</body>
+</html>
