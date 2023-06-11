@@ -1,0 +1,23 @@
+section{
+    width: 100vw;
+    height: 96vh;
+    background-image: url("../image/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+section>img{
+    width: 100vw;
+    height: 100vh;
+}
+h5{
+    font-family: "Avenir Next";
+    color: white;
+}
+label{
+    font-family: "Avenir Next";
+    color: white;
+}
+td,th{
+    font-family: "Avenir Next";
+    color: white;
+}

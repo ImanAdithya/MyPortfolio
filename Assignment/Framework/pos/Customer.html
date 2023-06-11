@@ -127,56 +127,67 @@
     </section>
 </main>
 
-
+<script src="js/jquery-3.7.0.min.js"></script>
 <script>
-   document.getElementById('onActionSave').addEventListener("click",function(){
-       var cusID= document.getElementById("cusID").value;
-       var cusName= document.getElementById("cusName").value;
-       var cusAddress= document.getElementById("cusAddress").value;
-       var cusContact= document.getElementById("cusContact").value;
-       let button =document.createElement("button");
-       let buttton2=document.createElement("button");
-      button.style.borderColor="#ffa502";
-      button.style.color="#ffa502";
-      button.style.width="80px";
-      button.style.margin="5px";
+   //document.getElementById('onActionSave').addEventListener("click",function(){
+   // $('onActionSave').click(function () {
+   //     var cusID=$('cusID').val();
+   //     var cusName=$('cusName').val();
+   //     var cusAddress=$('cusAddress').val();
+   //     var cusContact=$('cusContact').val();
+   //     let button =document.createElement("button");
+   //
+   //     button.style.borderColor="#ffa502";
+   //     button.style.color="#ffa502";
+   //     button.style.width="80px";
+   //     button.style.margin="5px";
+   //
+   //
+   //
+   //
+   //     // Get the table body element in which you want to add row
+   //     let table = document.getElementById("tBodyID");
+   //
+   //     // Create row element
+   //     let row = document.createElement("tr")
+   //
+   //     // Create cells
+   //     let c1 = document.createElement("td")
+   //     let c2 = document.createElement("td")
+   //     let c3 = document.createElement("td")
+   //     let c4 = document.createElement("td")
+   //     let c5 = document.createElement("td")
+   //
+   //
+   //
+   //
+   //     // Insert data to cells
+   //     c1.innerText = cusID;
+   //     c2.innerText = cusName;
+   //     c3.innerText = cusAddress;
+   //     c4.innerText = cusContact;
+   //     button.innerText= "DELETE";
+   //
+   //     // Append cells to row
+   //     row.appendChild(c1);
+   //     row.appendChild(c2);
+   //     row.appendChild(c3);
+   //     row.appendChild(c4);
+   //     row.appendChild(button);
+   //
+   //     // Append row to table body
+   //     table.appendChild(row)
+   // });
 
+   $('onActionSave').click(function () {
+       var cusID=$('cusID').val();
+       var cusName=$('cusName').val();
+       var cusAddress=$('cusAddress').val();
+       var cusContact=$('cusContact').val();
 
-
-
-       // Get the table body element in which you want to add row
-       let table = document.getElementById("tBodyID");
-
-       // Create row element
-       let row = document.createElement("tr")
-
-       // Create cells
-       let c1 = document.createElement("td")
-       let c2 = document.createElement("td")
-       let c3 = document.createElement("td")
-       let c4 = document.createElement("td")
-       let c5 = document.createElement("td")
-
-
-
-
-       // Insert data to cells
-       c1.innerText = cusID;
-       c2.innerText = cusName;
-       c3.innerText = cusAddress;
-       c4.innerText = cusContact;
-       button.innerText= "DELETE";
-
-       // Append cells to row
-       row.appendChild(c1);
-       row.appendChild(c2);
-       row.appendChild(c3);
-       row.appendChild(c4);
-       row.appendChild(button);
-
-       // Append row to table body
-       table.appendChild(row)
-
+       let customer=[cusID,cusName,cusAddress,cusContact];
+       let list="<td>"+customer+"<\td>";
+       $("#tBodyID").append(list);
    });
 
 </script>
