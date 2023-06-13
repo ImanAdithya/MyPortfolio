@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="../../CSS-Frameworks/pos/assets/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+
+</head>
+<body>
+
+<main>
+  <section class="container bg-dark mt-5" style="width: 500px; height: 550px">
+
+    <div class="row bg-dark mb-4 pt-3 ms-3 me-3 gap-3" style="height: 100px ">
+      <button id="ce" class="col-2 bg-primary text-white border-white">CE</button>
+      <input id="display" type="text" class="bg-dark text-white border-bottom border-white col text-end" style="font-size: 40px"readonly>
+    </div>
+    <div class="row bg-dark gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
+      <button id="7" class="col bg-dark text-white border-white " >7</button>
+      <button id="8" class="col bg-dark text-white border-white">8</button>
+      <button id="9" class="col bg-dark text-white border-white">9</button>
+      <button id="+" class="col bg-success text-white border-white">+</button>
+    </div>
+
+    <div class="row bg-dark gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
+      <button id="4" class="col bg-dark text-white border-white" >4</button>
+      <button id="5" class="col bg-dark text-white border-white">5</button>
+      <button id="6" class="col bg-dark text-white border-white">6</button>
+      <button id="-" class="col bg-success text-white border-white">-</button>
+    </div>
+
+    <div class="row bg-dark gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
+      <button id="1" class="col bg-dark text-white border-white" >1</button>
+      <button id="2" class="col bg-dark text-white border-white">2</button>
+      <button id="3" class="col bg-dark text-white border-white">3</button>
+      <button id="/" class="col bg-success text-white border-white">/</button>
+    </div>
+
+    <div class="row bg-dark gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
+      <button id="0" class="col bg-dark text-white border-white" >0</button>
+      <button id="." class="col bg-dark text-white border-white">.</button>
+      <button id="=" class="col bg-secondary text-white border-white">=</button>
+      <button id="*" class="col bg-success text-white border-white">*</button>
+    </div>
+
+  </section>
+</main>
+
+<script src="assets/jquery-3.7.0.min.js"></script>
+<script>
+
+  $('#display').val(0);
+
+  $('#ce').click(function () {
+    $('#display').val(0);
+  });
+
+  $('#1').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+  $('#2').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+  $('#3').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+  $('#4').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+  $('#5').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+  $('#6').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+  $('#7').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+  $('#8').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+  $('#9').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+  $('#0').click(function () {
+    if ($("#display").val() == 0)
+      $("#display").val($(this).text());
+    else
+      $("#display").val($(
+              "#display").val() + $(this).text());
+  });
+
+</script>
+</body>
+</html>
