@@ -140,32 +140,32 @@
 
             <form class="m-5">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">ITEM ID</label>
-                    <input type="email" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="itemID" class="form-label">ITEM ID</label>
+                    <input type="email" class="form-control bg-black border-white text-warning focus-ring-warning" id="itemID" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">DESCRIPTION</label>
-                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputPassword1">
+                    <label for="description" class="form-label">DESCRIPTION</label>
+                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="description">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">UNIT PRICE</label>
-                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputUnitPrice">
+                    <label for="unitPrice" class="form-label">UNIT PRICE</label>
+                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="uPrice">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">QUANTITY</label>
-                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="exampleInputQty">
+                    <label  class="form-label">QUANTITY</label>
+                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="quantity">
                 </div>
 
                 <div class="row mt-5 gap-2 m-1">
-                    <button type="submit" class="btn btn-outline-warning col ">SAVE</button>
-                    <button type="submit" class="btn btn-outline-warning col">UPDATE </button>
+                    <button type="button" class="btn btn-outline-warning col " id="onActionSaveItem">SAVE</button>
+                    <button type="button" class="btn btn-outline-warning col">UPDATE </button>
                 </div>
             </form>
         </div>
 
 
         <div class="col-5 m-4 border-start">
-            <table class="table text-white m-3">
+            <table class="table text-white m-3" id="tblItem">
                 <thead class="text-warning">
                 <tr>
                     <th scope="col">ID</th>
@@ -176,33 +176,6 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">I001</th>
-                    <td>Badminton Racket</td>
-                    <td>10000.00</td>
-                    <td>1</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">I002</th>
-                    <td>Tenis Ball</td>
-                    <td>1200.00</td>
-                    <td>4</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">I003</th>
-                    <td>Volley BAll</td>
-                    <td>9000.00</td>
-                    <td>1</td>
-                    <td><button type="button" class="btn btn-outline-warning">Edit</button>
-                        <button type="button" class="btn btn-outline-danger">Delete</button>
-                    </td>
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -435,8 +408,9 @@
         document.getElementById("placeOrder").style.display="none";
     });
 
-
+    <!--======================================CUSTOMER MANAGEMENT==============================================-->
     let customerDetail=[];
+
     $('#onActionSave').click(function () {
         let cusID=$('#cusID').val();
         let cusName=$('#cusName').val();
@@ -450,8 +424,23 @@
             customerContact:cusContact
         }
             customerDetail.push(customerOb);
-             let tr=$('<tr> <td>'+customerDetail.customerID+'</td> <td>'+customerDetail.customerName+'</td> <td>'+customerDetail.customerAddress+'</td> <td>'+customerDetail.customerContact+'</td></tr>');
-             $("#tblcustomer").append(tr);
+             //let tr=$('<tr> <td>'+customerDetail.customerID+'</td> <td>'+customerDetail.customerName+'</td> <td>'+customerDetail.customerAddress+'</td> <td>'+customerDetail.customerContact+'</td></tr>');
+             //$("#tblcustomer").append(tr);
+
+        for (let i = 0; i <customerDetail.length ; i++) {
+            let id=customerDetail[i].customerID;
+            let name=customerDetail[i].customerName;
+            let address=customerDetail[i].customerAddress;
+            let contact=customerDetail[i].customerContact;
+
+            let row=`<tr>
+                    <td>${id}</td>
+                    <td>${name}</td>
+                    <td>${address}</td>
+                    <td>${contact}</td>
+                </tr>`
+            $("#tblcustomer").append(row);
+        }
 
     });
 
@@ -470,7 +459,7 @@
     //     $("#tblcustomer").append(tr);
     // });
 
-    // //get All
+    //get All
     // for (let i = 0; i < customerDetail.length; i++) {
     //     let id=customerDetail[i][0];
     //     let name=customerDetail[i][1];
@@ -485,6 +474,43 @@
     //             </tr>`
     //     $("#tblcustomer").append(row);
     // }
+
+    <!--======================================ITEM MANAGEMENT==============================================-->
+
+    let itemDetails= [];
+
+    $('#onActionSaveItem').click(function () {
+        let iId=$('#itemID').val();
+        let description=$('#description').val();
+        let unitPrice=$('#uPrice').val();
+        let qty=$('#quantity').val();
+
+        let ItemOb={
+           itemID:iId,
+           itemDescription:description,
+           itemUnitPrice:unitPrice,
+           itemQty:qty
+        }
+        itemDetails.push(ItemOb);
+
+        for (let i = 0; i < itemDetails.length; i++) {
+            let id = itemDetails[i].itemID;
+            let des = itemDetails[i].itemDescription;
+            let up = itemDetails[i].itemUnitPrice;
+            let q = itemDetails[i].itemQty
+
+            let itemRow = `<tr>
+                    <td>${id}</td>
+                    <td>${des}</td>
+                    <td>${up}</td>
+                    <td>${q}</td>
+                </tr>`
+
+            $('#tblItem').append(itemRow)
+        }
+
+    });
+
 </script>
 </body>
 </html>
