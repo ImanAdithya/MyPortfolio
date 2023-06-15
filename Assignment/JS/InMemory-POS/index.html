@@ -107,10 +107,10 @@
                 </div>
                 <div class="row m-0 gap-2 mt-5">
                     <button type="button" class="btn btn-outline-warning  col" id="onActionSave">SAVE</button>
-                    <button type="button" class="btn btn-outline-warning col">UPDATE</button>
+                    <button type="button" class="btn btn-outline-warning col" id="btnCustomerUpdate">UPDATE</button>
+                    <button type="button" class="btn btn-outline-warning col" id="btnDelete">DELETE</button>
                 </div>
-                <!--                <button type="submit" class="btn btn-outline-warning  container-fluid">Save</button>-->
-                <!--                <button type="submit" class="btn btn-outline-light disabled container-fluid">Update</button>-->
+
             </form>
         </div>
         <div class="col-5 border-white m-3  border-start">
@@ -121,11 +121,10 @@
                     <th scope="col">NAME</th>
                     <th scope="col">ADDRESS</th>
                     <th scope="col">CONTACT</th>
-                    <th scope="col">ACTION</th>
                 </tr>
                 </thead>
-                <tbody  id="tBody">
-
+                <tbody  id="customerTbody">
+                <tr></tr>
                 </tbody>
             </table>
         </div>
@@ -145,20 +144,21 @@
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label">DESCRIPTION</label>
-                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="description">
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="description">
                 </div>
                 <div class="mb-3">
                     <label for="unitPrice" class="form-label">UNIT PRICE</label>
-                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="uPrice">
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="uPrice">
                 </div>
                 <div class="mb-3">
                     <label  class="form-label">QUANTITY</label>
-                    <input type="password" class="form-control bg-black border-white text-warning focus-ring-warning" id="quantity">
+                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="quantity">
                 </div>
 
                 <div class="row mt-5 gap-2 m-1">
                     <button type="button" class="btn btn-outline-warning col " id="onActionSaveItem">SAVE</button>
-                    <button type="button" class="btn btn-outline-warning col">UPDATE </button>
+                    <button type="button" class="btn btn-outline-warning col"id="btnItemUpdate" >UPDATE </button>
+                    <button type="button" class="btn btn-outline-warning col" id="btnItemDelete">DELETE </button>
                 </div>
             </form>
         </div>
@@ -172,10 +172,10 @@
                     <th scope="col">DESCRIPTION</th>
                     <th scope="col">UNIT PRICE</th>
                     <th scope="col">QUANTITY</th>
-                    <th scope="col">ACTION</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="itemTbody">
+                <tr></tr>
                 </tbody>
             </table>
         </div>
@@ -412,6 +412,7 @@
     let customerDetail=[];
 
     $('#onActionSave').click(function () {
+
         let cusID=$('#cusID').val();
         let cusName=$('#cusName').val();
         let cusAddress=$('#cusAddress').val();
@@ -427,6 +428,34 @@
              //let tr=$('<tr> <td>'+customerDetail.customerID+'</td> <td>'+customerDetail.customerName+'</td> <td>'+customerDetail.customerAddress+'</td> <td>'+customerDetail.customerContact+'</td></tr>');
              //$("#tblcustomer").append(tr);
 
+        getAllCustomer();
+    });
+
+    $('#btnDelete').click(function () {
+        for (let i = 0; i < customerDetail.length; i++) {
+            if (customerDetail[i].customerID==$('#cusID').val()){
+                customerDetail.splice(i,1);
+                getAllCustomer();
+                break;
+            }
+        }
+    });
+
+    $('#btnCustomerUpdate').click(function () {
+        for (let i = 0; i < customerDetail.length; i++) {
+            if ($('#cusID').val()==customerDetail[i].customerID){
+                customerDetail[i].customerID=$('#cusID').val();
+                customerDetail[i].customerName=$('#cusName').val();
+                customerDetail[i].customerAddress=$('#cusAddress').val();
+                customerDetail[i].customerContact=$('#cusContact').val();
+                getAllCustomer();
+                break;
+            }
+        }
+    });
+
+    function getAllCustomer() {
+        $('#customerTbody').empty();
         for (let i = 0; i <customerDetail.length ; i++) {
             let id=customerDetail[i].customerID;
             let name=customerDetail[i].customerName;
@@ -440,9 +469,26 @@
                     <td>${contact}</td>
                 </tr>`
             $("#tblcustomer").append(row);
+            bindCustomerTrEvents();
         }
 
-    });
+    }
+
+    function bindCustomerTrEvents() {
+        $('#customerTbody>tr').click(function (event) {
+
+            let id=$(this).children().eq(0).text();
+            let name=$(this).children().eq(1).text();
+            let address= $(this).children().eq(2).text();
+            let contact=$(this).children().eq(3).text();
+
+            $('#cusID').val(id);
+            $('#cusName').val(name);
+            $('#cusAddress').val(address);
+            $('#cusContact').val(contact);
+
+        });
+    }
 
         //let tr=$('<tr> <td>'+cusID+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
         // let row=`<tr>
@@ -458,22 +504,6 @@
     //     let tr=$('<tr> <td>'+list[0]+'</td> <td>'+list[1]+'</td> <td>'+list[2]+'</td> <td>'+list[3]+'</td></tr>');
     //     $("#tblcustomer").append(tr);
     // });
-
-    //get All
-    // for (let i = 0; i < customerDetail.length; i++) {
-    //     let id=customerDetail[i][0];
-    //     let name=customerDetail[i][1];
-    //     let address=customerDetail[i][2];
-    //     let contact=customerDetail[i][3];
-    //
-    //     let row=`<tr>
-    //                 <td>${id}</td>
-    //                 <td>${name}</td>
-    //                 <td>${address}</td>
-    //                 <td>${contact}</td>
-    //             </tr>`
-    //     $("#tblcustomer").append(row);
-    // }
 
     <!--======================================ITEM MANAGEMENT==============================================-->
 
@@ -493,6 +523,12 @@
         }
         itemDetails.push(ItemOb);
 
+        getItemALl();
+
+    });
+
+    function getItemALl() {
+        $('#itemTbody').empty();
         for (let i = 0; i < itemDetails.length; i++) {
             let id = itemDetails[i].itemID;
             let des = itemDetails[i].itemDescription;
@@ -506,10 +542,51 @@
                     <td>${q}</td>
                 </tr>`
 
-            $('#tblItem').append(itemRow)
+            $('#tblItem').append(itemRow);
+            bindItemTrEvents();
         }
 
+    }
+    function bindItemTrEvents() {
+        $('#itemTbody>tr').click(function (event) {
+
+            let idT=$(this).children().eq(0).text();
+            let des=$(this).children().eq(1).text();
+            let uP= $(this).children().eq(2).text();
+            let q=$(this).children().eq(3).text();
+
+            $('#itemID').val(idT);
+            $('#description').val(des);
+            $('#uPrice').val(uP);
+            $('#quantity').val(q);
+
+        });
+    }
+
+    $('#btnItemDelete').click(function () {
+        for (let i = 0; i < itemDetails.length; i++) {
+            if (itemDetails[i].itemID==$('#itemID').val()){
+                itemDetails.splice(i,1);
+                getItemALl();
+                break;
+            }
+        }
     });
+
+    $('#btnItemUpdate').click(function () {
+        for (let i = 0; i < itemDetails.length; i++) {
+            if ($('#itemID').val()==itemDetails[i].itemID){
+                itemDetails[i].itemID=$('#itemID').val();
+                itemDetails[i].itemDescription=$('#description').val();
+                itemDetails[i].itemUnitPrice=$('#UnitPrice').val();
+                itemDetails[i].itemQty=$('#quantity').val();
+                getAllCustomer();
+                break;
+            }
+        }
+    });
+
+
 
 </script>
 </body>

@@ -32,14 +32,14 @@
         <button id="1" class="col bg-dark text-white border-white rounded-5" >1</button>
         <button id="2" class="col bg-dark text-white border-white rounded-5">2</button>
         <button id="3" class="col bg-dark text-white border-white rounded-5">3</button>
-        <button id="/" class="col bg-warning text-white border-white rounded-5">/</button>
+        <button id="divide" class="col bg-warning text-white border-white rounded-5">/</button>
     </div>
 
     <div class="row bg-dark gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
         <button id="0" class="col bg-dark text-white border-white rounded-5" >0</button>
         <button id="dot" class="col bg-dark text-white border-white rounded-5">.</button>
         <button id="equal" class="col bg-secondary text-white border-white rounded-5">=</button>
-        <button id="*" class="col bg-warning text-white border-white rounded-5">*</button>
+        <button id="multi" class="col bg-warning text-white border-white rounded-5">*</button>
     </div>
 
 </section>
@@ -165,6 +165,18 @@
         op=$(this).text();
     });
     $('#sub').click(function () {
+        value1=$('#display').val();
+        $('#display').val(0);
+
+        op=$(this).text();
+    });
+    $('#divide').click(function () {
+        value1=$('#display').val();
+        $('#display').val(0);
+
+        op=$(this).text();
+    });
+    $('#multi').click(function () {
         value1=$('#display').val();
         $('#display').val(0);
 
