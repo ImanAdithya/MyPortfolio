@@ -91,19 +91,19 @@
             <form class="m-5">
                 <div class="mb-3">
                     <label for="cusID" class="form-label text-white">CUSTOMER  ID</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning" id="cusID">
+                    <input type="text" class="form-control  border-white text-warning focus-ring-warning" id="cusID">
                 </div>
                 <div class="mb-3">
                     <label for="cusName" class="form-label text-white">NAME</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="cusName">
+                    <input type="text" class="form-control  border-white text-warning focus-ring-warning focus-ring" id="cusName">
                 </div>
                 <div class="mb-3">
                     <label for="cusAddress" class="form-label text-white">ADDRESS</label>
-                    <input type="text" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring" id="cusAddress">
+                    <input type="text" class="form-control  border-white text-warning focus-ring-warning focus-ring" id="cusAddress">
                 </div>
                 <div class="mb-3">
                     <label for="cusContact" class="form-label text-white">CONTACT</label>
-                    <input type="tel" class="form-control bg-black border-white text-warning focus-ring-warning focus-ring " id="cusContact">
+                    <input type="tel" class="form-control  border-white text-warning focus-ring-warning focus-ring " id="cusContact">
                 </div>
                 <div class="row m-0 gap-2 mt-5">
                     <button type="button" class="btn btn-outline-warning  col" id="onActionSave">SAVE</button>
@@ -522,32 +522,52 @@
         }
     });
 
-    let cusIdRegex=/^(C00-)[0-9]{3}$/;
-
-    if(cusIdRegex){
+        let cusIdRegex=/^(C00-)[0-9]{3}$/;
         $("#cusID").keydown(function (e) {
-            if (e.key=="Enter"){
-                $("#cusName").focus();
+            if (e.key=="Enter"  && cusIdRegex.test($('#cusID').val())){
+                $(this).css("background-color","black","!important");
+                $('#cusName').focus();
             }
         });
-    }
 
-    let cusNameRegex=/[a-z]/g;
-     if(cusNameRegex){
-      $("#cusName").keydown(function (e) {
-          if (e.key=="Enter"){
-              $("#cusAddress").focus();
-          }
-      });
-  }
-    $("#cusAddress").keydown(function (e) {
-        if (e.key=="Enter"){
-            $("#cusContact").focus();
+    $("#cusID").keyup(function (e) {
+        if (cusIdRegex.test($('#cusID').val())){
+            $(this).css("background-color","green","!important");
+        }else{
+            $(this).css("background-color","red","!important");
         }
     });
+
+
+    let cusNameRegex=/^[A-Za-z\s]+$/;
+     if(cusNameRegex){
+      $("#cusName").keydown(function (e) {
+          if (e.key=="Enter" && cusNameRegex.test($('#cusName').val())){
+              $("#cusAddress").focus();
+              $(this).css("background-color","green","!important");
+          }else{
+              $(this).css("background-color","red","!important");
+          }
+      });
+    }
+     let cusAddressRegex=/^[A-Za-z\s]+$/;
+    $("#cusAddress").keydown(function (e) {
+        if (e.key=="Enter" && cusAddressRegex.test($('#cusAddress').val())){
+            $("#cusContact").focus();
+            $(this).css("background-color","green","!important");
+        }else{
+            $(this).css("background-color","red","!important");
+        }
+    });
+
+
+    let cusContactRegex= /^\d{10}$/;
     $("#cusContact").keydown(function (e) {
-        if (e.key=="Enter"){
+        if (e.key=="Enter" && cusContactRegex.test($('#cusContact').val())){
             saveCustomer();
+            $(this).css("background-color","green","!important");
+        }else{
+            $(this).css("background-color","red","!important");
         }
     });
 
@@ -563,7 +583,6 @@
             customerAddress:cusAddress,
             customerContact:cusContact
         }
-
 
         if (checkValidtion()){
             customerDetail.push(customerOb);
@@ -669,7 +688,6 @@
         $("#itemID,#description,#uPrice,#quantity").val("");
         $('#itemID').focus();
     }
-
 
 </script>
 </body>
