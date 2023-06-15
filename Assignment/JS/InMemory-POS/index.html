@@ -424,11 +424,19 @@
             customerAddress:cusAddress,
             customerContact:cusContact
         }
+
+
+        if (checkValidtion()){
             customerDetail.push(customerOb);
+            getAllCustomer();
+        }else {
+            alert("THIS CUSTOMER ALREADY IN THIS SYSTEM");
+        }
+
              //let tr=$('<tr> <td>'+customerDetail.customerID+'</td> <td>'+customerDetail.customerName+'</td> <td>'+customerDetail.customerAddress+'</td> <td>'+customerDetail.customerContact+'</td></tr>');
              //$("#tblcustomer").append(tr);
 
-        getAllCustomer();
+
     });
 
     $('#btnDelete').click(function () {
@@ -442,14 +450,20 @@
     });
 
     $('#btnCustomerUpdate').click(function () {
-        for (let i = 0; i < customerDetail.length; i++) {
-            if ($('#cusID').val()==customerDetail[i].customerID){
-                customerDetail[i].customerID=$('#cusID').val();
-                customerDetail[i].customerName=$('#cusName').val();
-                customerDetail[i].customerAddress=$('#cusAddress').val();
-                customerDetail[i].customerContact=$('#cusContact').val();
-                getAllCustomer();
-                break;
+
+        let consent=confirm("DO U WANT UPDATE THIS CUSTOMER");
+
+        if (consent){
+            for (let i = 0; i < customerDetail.length; i++) {
+                if ($('#cusID').val()==customerDetail[i].customerID){
+                    customerDetail[i].customerID=$('#cusID').val();
+                    customerDetail[i].customerName=$('#cusName').val();
+                    customerDetail[i].customerAddress=$('#cusAddress').val();
+                    customerDetail[i].customerContact=$('#cusContact').val();
+                    getAllCustomer();
+                    alert("UPDATED SUCSUS")
+                    break;
+                }
             }
         }
     });
@@ -457,6 +471,7 @@
     function getAllCustomer() {
         $('#customerTbody').empty();
         for (let i = 0; i <customerDetail.length ; i++) {
+
             let id=customerDetail[i].customerID;
             let name=customerDetail[i].customerName;
             let address=customerDetail[i].customerAddress;
@@ -471,9 +486,22 @@
             $("#tblcustomer").append(row);
             bindCustomerTrEvents();
         }
-
     }
 
+    //CALL BACK FUNCTIONS
+    function searchCustomer(id) {//if(search cusomeer==undefined)
+        return customerDetail.find(function (customer) {
+            return v.customerID=$('cusID').val(); //return an Object
+        });
+    }
+    function checkValidtion() {
+        for (let i = 0; i < customerDetail.length; i++) {
+            if ($('#cusID').val()==customerDetail[i].customerID){
+                return false;
+            }
+        }
+        return true;
+    }
     function bindCustomerTrEvents() {
         $('#customerTbody>tr').click(function (event) {
 
