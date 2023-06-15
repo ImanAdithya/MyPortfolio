@@ -412,30 +412,9 @@
     let customerDetail=[];
 
     $('#onActionSave').click(function () {
-
-        let cusID=$('#cusID').val();
-        let cusName=$('#cusName').val();
-        let cusAddress=$('#cusAddress').val();
-        let cusContact=$('#cusContact').val();
-
-        let customerOb={
-            customerID:cusID,
-            customerName:cusName,
-            customerAddress:cusAddress,
-            customerContact:cusContact
-        }
-
-
-        if (checkValidtion()){
-            customerDetail.push(customerOb);
-            getAllCustomer();
-        }else {
-            alert("THIS CUSTOMER ALREADY IN THIS SYSTEM");
-        }
-
-             //let tr=$('<tr> <td>'+customerDetail.customerID+'</td> <td>'+customerDetail.customerName+'</td> <td>'+customerDetail.customerAddress+'</td> <td>'+customerDetail.customerContact+'</td></tr>');
+        saveCustomer();
+        //let tr=$('<tr> <td>'+customerDetail.customerID+'</td> <td>'+customerDetail.customerName+'</td> <td>'+customerDetail.customerAddress+'</td> <td>'+customerDetail.customerContact+'</td></tr>');
              //$("#tblcustomer").append(tr);
-
 
     });
 
@@ -444,6 +423,7 @@
             if (customerDetail[i].customerID==$('#cusID').val()){
                 customerDetail.splice(i,1);
                 getAllCustomer();
+                clearCustomerFeilds();
                 break;
             }
         }
@@ -461,7 +441,8 @@
                     customerDetail[i].customerAddress=$('#cusAddress').val();
                     customerDetail[i].customerContact=$('#cusContact').val();
                     getAllCustomer();
-                    alert("UPDATED SUCSUS")
+                    clearCustomerFeilds();
+                    alert("UPDATED SUCSUS");
                     break;
                 }
             }
@@ -518,7 +499,7 @@
         });
     }
 
-        //let tr=$('<tr> <td>'+cusID+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
+    //let tr=$('<tr> <td>'+cusID+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
         // let row=`<tr>
         //             <td>${cusID}</td>
         //             <td>${cusName}</td>
@@ -532,6 +513,76 @@
     //     let tr=$('<tr> <td>'+list[0]+'</td> <td>'+list[1]+'</td> <td>'+list[2]+'</td> <td>'+list[3]+'</td></tr>');
     //     $("#tblcustomer").append(tr);
     // });
+
+    //DISABLE TAB
+    //keydown=get press key
+    $("#cusID,#cusName,#cusAddress,#cusContact").keydown(function (e) {
+        if (e.keyCode==9){//key=="Tab"
+            e.preventDefault();
+        }
+    });
+
+    let cusIdRegex=/^(C00-)[0-9]{3}$/;
+
+    if(cusIdRegex){
+        $("#cusID").keydown(function (e) {
+            if (e.key=="Enter"){
+                $("#cusName").focus();
+            }
+        });
+    }
+
+    let cusNameRegex=/[a-z]/g;
+     if(cusNameRegex){
+      $("#cusName").keydown(function (e) {
+          if (e.key=="Enter"){
+              $("#cusAddress").focus();
+          }
+      });
+  }
+    $("#cusAddress").keydown(function (e) {
+        if (e.key=="Enter"){
+            $("#cusContact").focus();
+        }
+    });
+    $("#cusContact").keydown(function (e) {
+        if (e.key=="Enter"){
+            saveCustomer();
+        }
+    });
+
+    function saveCustomer() {
+        let cusID=$('#cusID').val();
+        let cusName=$('#cusName').val();
+        let cusAddress=$('#cusAddress').val();
+        let cusContact=$('#cusContact').val();
+
+        let customerOb={
+            customerID:cusID,
+            customerName:cusName,
+            customerAddress:cusAddress,
+            customerContact:cusContact
+        }
+
+
+        if (checkValidtion()){
+            customerDetail.push(customerOb);
+            clearCustomerFeilds();
+            getAllCustomer();
+
+        }else {
+            alert("THIS CUSTOMER ALREADY IN THIS SYSTEM");
+            clearCustomerFeilds();
+        }
+    }
+
+
+
+    function clearCustomerFeilds() {
+        $("#cusID,#cusName,#cusAddress,#cusContact").val("");
+        $('#cusID').focus();
+    }
+
 
     <!--======================================ITEM MANAGEMENT==============================================-->
 
@@ -614,6 +665,10 @@
         }
     });
 
+    function clearItemFeilds() {
+        $("#itemID,#description,#uPrice,#quantity").val("");
+        $('#itemID').focus();
+    }
 
 
 </script>
