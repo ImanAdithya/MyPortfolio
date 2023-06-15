@@ -18,14 +18,14 @@
         <button id="7" class="col bg-dark text-white border-white rounded-5" >7</button>
         <button id="8" class="col bg-dark text-white border-white rounded-5">8</button>
         <button id="9" class="col bg-dark text-white border-white rounded-5 ">9</button>
-        <button id="+" class="col bg-warning text-white border-white rounded-5">+</button>
+        <button id="addtion" class="col bg-warning text-white border-white rounded-5">+</button>
     </div>
 
     <div class="row bg-dark gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
         <button id="4" class="col bg-dark text-white border-white rounded-5" >4</button>
         <button id="5" class="col bg-dark text-white border-white rounded-5">5</button>
         <button id="6" class="col bg-dark text-white border-white rounded-5">6</button>
-        <button id="-" class="col bg-warning text-white border-white rounded-5">-</button>
+        <button id="sub" class="col bg-warning text-white border-white rounded-5">-</button>
     </div>
 
     <div class="row bg-dark gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
@@ -37,8 +37,8 @@
 
     <div class="row bg-dark gap-2 mb-3 ms-3 me-3 " style="height: 80px; font-size: 30px">
         <button id="0" class="col bg-dark text-white border-white rounded-5" >0</button>
-        <button id="." class="col bg-dark text-white border-white rounded-5">.</button>
-        <button id="=" class="col bg-secondary text-white border-white rounded-5">=</button>
+        <button id="dot" class="col bg-dark text-white border-white rounded-5">.</button>
+        <button id="equal" class="col bg-secondary text-white border-white rounded-5">=</button>
         <button id="*" class="col bg-warning text-white border-white rounded-5">*</button>
     </div>
 
@@ -47,6 +47,149 @@
 <script src="js/jquery-3.7.0.min.js"></script>
 <script>
 
+    let value1;
+    let value2;
+    let op;
+    let total
+
+    $('#display').val(0);
+
+    $('#1').click(function () {
+       if ($('#display').val()==0){
+           $('#display').val($(this).text());
+       }else{
+           $('#display').val(
+               $('#display').val()+$(this).text()
+           );
+       }
+    });
+    $('#2').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#3').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#4').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#5').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#6').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#7').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#8').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#9').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#0').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+    $('#dot').click(function () {
+        if ($('#display').val()==0){
+            $('#display').val($(this).text());
+        }else{
+            $('#display').val(
+                $('#display').val()+$(this).text()
+            );
+        }
+    });
+
+    $('#addtion').click(function () {
+        value1=$('#display').val();
+        $('#display').val(0);
+
+        op=$(this).text();
+    });
+    $('#sub').click(function () {
+        value1=$('#display').val();
+        $('#display').val(0);
+
+        op=$(this).text();
+    });
+
+    $('#equal').click(function () {
+
+        value2=$('#display').val();
+
+        if (op=='+'){
+            total=parseFloat(value1)+parseFloat(value2);
+        }
+
+        if (op=='-'){
+            total=parseFloat(value1)-parseFloat(value2);
+        }
+
+        if (op=='*'){
+            total=parseFloat(value1)*parseFloat(value2);
+        }
+
+        if (op=='/'){
+            total=parseFloat(value1)/parseFloat(value2);
+        }
+
+        $('#display').val(total);
+        $('#display2').val(value1+op+value2);
+    });
 </script>
 </body>
 </html>
