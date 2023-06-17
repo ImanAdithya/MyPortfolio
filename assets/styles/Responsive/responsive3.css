@@ -58,10 +58,64 @@
         margin:0;
     }
     body>main>section:nth-child(1)>article>img {
-        width: 20.5%;
+        width: 19.5% !important;
         height: 6.5%;
         position: relative;
-        top: 25% !important;
-        left: 30%;
+        top: 28% !important;
+        left: 34%;
     }
+    body>main>section:nth-child(2)>aside>img {
+        display:none;
+    }
+    body>main>section:nth-child(2)>aside {
+        display:none;
+    }
+    body>main>section:nth-child(2)>article {
+        width: 90vw;
+        height: 100vh;
+    }
+    body>main>section:nth-child(2)>p:nth-child(1) {
+        margin: 0;
+        top: 0%;
+        left: 22%;
+        font-size: 300%;
+    }
+    body>main>section:nth-child(2)>p:nth-child(2) {
+        margin: 0;
+        top: 3%;
+        left: 37%;
+        font-size: 110%;
+    }
+    body>main>section:nth-child(2)>article>div:nth-child(4) {
+        display:none;
+    }
+    body>main>section:nth-child(2)>article>div:nth-child(5) {
+        display:none;
+    }
+    body>main>section:nth-child(2) {
+        height: 40vh;
+    }
+    body>main>section:nth-child(2)>article>p:nth-child(1) {
+        position: relative;
+        left: 0;
+        top: 8%;
+        font-size: 150%;
+        margin:0;
+    }
+    body>main>section:nth-child(2)>article>p:nth-child(2) {
+        left: 0;
+        top: 10%;
+        font-size: 45%;
+        padding-right:20px;
+
+    }
+    body>main>section:nth-child(2)>article>p:nth-child(3) {
+        position: relative;
+        left: 0;
+        top: 10%;
+        font-size: 45%;
+        font-family: "Toppan Bunkyu Gothic";
+        opacity: .7;
+    }
+
 }
