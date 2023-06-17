@@ -1,0 +1,21 @@
+@media all and (max-width: 425px) and (min-width: 320px){
+
+
+    body>main>section:nth-child(1) .background {
+        position: absolute;
+        display: none;
+    }
+    body>main>section:nth-child(1)>aside>img {
+        display: none;
+    }
+    body>main>section:nth-child(1)>article {
+        width: 100vw;
+        height: 95vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    nav {
+        display: none;
+    }
+}
