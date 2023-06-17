@@ -1,6 +1,9 @@
 @media all and (max-width: 1024px) and (min-width: 768px){
 
     /*Home responsive*/
+    body{
+        overflow-x:hidden;
+    }
 
     body>main>section:nth-child(1)>aside>img{
         width: 86%;
