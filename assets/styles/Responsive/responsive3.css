@@ -18,4 +18,50 @@
     nav {
         display: none;
     }
+    header>img{
+        position: relative;
+        width: 25%;
+        height: 25%;
+        top: 32%;
+        left: 71%;
+    }
+
+    body>main>section:nth-child(1){ /*main section*/
+        height: 40vh;
+    }
+    body>main>section:nth-child(1)>article>h4:nth-child(1) {
+        top: 5%;
+        left: 16%;
+    }
+    body>main>section:nth-child(1)>article>h4:nth-child(2) {
+        color: var(--var-color);
+        position: absolute;
+        top: 5%;
+        left: 34%;
+        font-size: 250%;
+    }
+    body>main>section:nth-child(1)>article>h4:nth-child(3) {
+        top: 10%;
+        left: 16%;
+        font-size: 250%;
+    }
+    body>main>section:nth-child(1)>article>h4:nth-child(4) {
+        top: 10%;
+        left: 25%;
+        font-size: 250%;
+        margin-bottom:0;
+    }
+    body>main>section:nth-child(1)>article>p {
+        top: 18%;
+        left: 60px;
+        font-size: 70%;
+        margin:0;
+    }
+    body>main>section:nth-child(1)>article>img {
+        width: 20.5%;
+        height: 6.5%;
+        position: relative;
+        top: 25% !important;
+        left: 30%;
+    }
 }
