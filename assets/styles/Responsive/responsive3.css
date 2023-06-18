@@ -274,18 +274,48 @@
         width: 7%;
         height: 0.5%;
         background-color: #1B9CFC;
-        top: 4.5%;
+        top: 5.2%;
         right: 40%;
     }
     body>main>section:nth-child(6)>article:nth-child(4) {
         display:none;
     }
     body>main>section:nth-child(6)>aside:nth-child(5) {
-        position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         right: 0;
+    }
+    body>main>section:nth-child(6)>section {
+        display:none;
+    }
+    body>main>section:nth-child(6) {
+        width: 100vw;
+        height: 60vh;
+    }
+    #txtName{
+        height: 13% !important;
+        width: 37% !important;
+    }
+    #txtPhone{
+        height: 13% !important;
+        width: 37% !important;
+    }
+    #txtEmail{
+        height: 13% !important;
+        width: 37% !important;
+    }
+    #txtSubject{
+        height: 13% !important;
+        width: 37% !important;
+    }
+    body>main>section:nth-child(6)>aside>form {
+        top: 22%;
+        left:12%;
+    }
+    body>main>section:nth-child(6)>aside>form>button {
+        width: 50%;
+        left:15%;
     }
 
 }
