@@ -90,12 +90,12 @@
         font-size: 135%;
     }
     body>main>section:nth-child(2)>div:nth-child(3) {
-        top: 7%;
+        top: 7.5%;
         left: 50%;
     }
 
     body>main>section:nth-child(2)>aside>img{
-        height: 55%;
+        height: 70%;
         width: 90%;
         top: 18%;
 
@@ -105,7 +105,7 @@
         font-size: 170%;
     }
     body>main>section:nth-child(2)>article>p:nth-child(2){
-        top: 10%;
+        top: 11.4%;
         font-size: 62%;
     }
     body>main>section:nth-child(2)>article>p:nth-child(3){
@@ -207,12 +207,12 @@
         font-size: 400%;
     }
     body>main>section:nth-child(3)>p:nth-child(2){
-        top:3.5%;
+        top:4.5%;
         left:45%;
         font-size: 135%;
     }
     body>main>section:nth-child(3)>div:nth-child(6){
-        top: 7%;
+        top: 9%;
         width: 5%;
         left: 48%;
     }
@@ -223,7 +223,7 @@
     }
     body>main>section:nth-child(3)>img{
         width: 72%;
-        height:40%;
+        height:50%;
         position: relative;
         z-index: 1;
         left: 14%;
@@ -263,7 +263,7 @@
     }
     body>main>section:nth-child(4)> #underline{
         left: 48%;
-        top: 7.7%;
+        top: 8.3%;
         height: 0.5%;
     }
     body>main>section:nth-child(4)>section:nth-child(4){
@@ -271,7 +271,7 @@
     }
     body>main>section>.cat{
         width: 26%;
-        height: 38%;
+        height: 45%;
     }
     body>main>section>div:nth-child(5)>h4{
         font-size: 80%;
@@ -343,7 +343,7 @@
         left: 43%;
     }
     body>main>section:nth-child(5)>div:nth-child(3){
-        top: 7%;
+        top: 7.5%;
         right: 46%;
     }
     body>main>section:nth-child(5)>h5:nth-child(4){
@@ -377,7 +377,7 @@
     }
     body>main>section:nth-child(6)>div:nth-child(3){
         height: 0.4%;
-        top: 4.9%;
+        top: 5.1%;
         right: 55%;
     }
     body>main>section:nth-child(6)>aside>form>button{
