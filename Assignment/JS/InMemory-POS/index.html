@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="assets/js/bootstrap.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/CustomerStyle.css">
@@ -109,6 +109,7 @@
                     <button type="button" class="btn btn-outline-warning  col" id="onActionSave">SAVE</button>
                     <button type="button" class="btn btn-outline-warning col" id="btnCustomerUpdate">UPDATE</button>
                     <button type="button" class="btn btn-outline-warning col" id="btnDelete">DELETE</button>
+                    <button type="button" class="btn btn-outline-warning col" id="btnGetAll">GET ALL</button>
                 </div>
 
             </form>
@@ -372,7 +373,11 @@
         </div>
     </section>
 </main>
-<script src="js/jquery-3.7.0.min.js"></script>
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src="db/db.js"></script>
+<script src="models/customer.js"></script>
+<script src="controllers/validations/customerValidation.js"></script>
+<script src="controllers/CustomerController.js"></script>
 <script>
     document.getElementById("customer").style.display="none";
     document.getElementById("item").style.display="none";
@@ -409,203 +414,9 @@
     });
 
     <!--======================================CUSTOMER MANAGEMENT==============================================-->
-    let customerDetail=[];
-
-    $('#onActionSave').click(function () {
-        saveCustomer();
-        //let tr=$('<tr> <td>'+customerDetail.customerID+'</td> <td>'+customerDetail.customerName+'</td> <td>'+customerDetail.customerAddress+'</td> <td>'+customerDetail.customerContact+'</td></tr>');
-             //$("#tblcustomer").append(tr);
-
-    });
-
-    $('#btnDelete').click(function () {
-        for (let i = 0; i < customerDetail.length; i++) {
-            if (customerDetail[i].customerID==$('#cusID').val()){
-                customerDetail.splice(i,1);
-                getAllCustomer();
-                clearCustomerFeilds();
-                break;
-            }
-        }
-    });
-
-    $('#btnCustomerUpdate').click(function () {
-
-        let consent=confirm("DO U WANT UPDATE THIS CUSTOMER");
-
-        if (consent){
-            for (let i = 0; i < customerDetail.length; i++) {
-                if ($('#cusID').val()==customerDetail[i].customerID){
-                    customerDetail[i].customerID=$('#cusID').val();
-                    customerDetail[i].customerName=$('#cusName').val();
-                    customerDetail[i].customerAddress=$('#cusAddress').val();
-                    customerDetail[i].customerContact=$('#cusContact').val();
-                    getAllCustomer();
-                    clearCustomerFeilds();
-                    alert("UPDATED SUCSUS");
-                    break;
-                }
-            }
-        }
-    });
-
-    function getAllCustomer() {
-        $('#customerTbody').empty();
-        for (let i = 0; i <customerDetail.length ; i++) {
-
-            let id=customerDetail[i].customerID;
-            let name=customerDetail[i].customerName;
-            let address=customerDetail[i].customerAddress;
-            let contact=customerDetail[i].customerContact;
-
-            let row=`<tr>
-                    <td>${id}</td>
-                    <td>${name}</td>
-                    <td>${address}</td>
-                    <td>${contact}</td>
-                </tr>`
-            $("#tblcustomer").append(row);
-            bindCustomerTrEvents();
-        }
-    }
-
-    //CALL BACK FUNCTIONS
-    function searchCustomer(id) {//if(search cusomeer==undefined)
-        return customerDetail.find(function (customer) {
-            return v.customerID=$('cusID').val(); //return an Object
-        });
-    }
-    function checkValidtion() {
-        for (let i = 0; i < customerDetail.length; i++) {
-            if ($('#cusID').val()==customerDetail[i].customerID){
-                return false;
-            }
-        }
-        return true;
-    }
-    function bindCustomerTrEvents() {
-        $('#customerTbody>tr').click(function (event) {
-
-            let id=$(this).children().eq(0).text();
-            let name=$(this).children().eq(1).text();
-            let address= $(this).children().eq(2).text();
-            let contact=$(this).children().eq(3).text();
-
-            $('#cusID').val(id);
-            $('#cusName').val(name);
-            $('#cusAddress').val(address);
-            $('#cusContact').val(contact);
-
-        });
-    }
-
-    //let tr=$('<tr> <td>'+cusID+'</td> <td>'+cusName+'</td> <td>'+cusAddress+'</td> <td>'+cusContact+'</td></tr>');
-        // let row=`<tr>
-        //             <td>${cusID}</td>
-        //             <td>${cusName}</td>
-        //             <td>${cusAddress}</td>
-        //             <td>${cusContact}</td>
-        //         </tr>`
-        // $("#tblcustomer").append(row);
-        //
-    //     let list=[cusID,cusName,cusAddress,cusContact];
-    //     customerDetail.push(list);
-    //     let tr=$('<tr> <td>'+list[0]+'</td> <td>'+list[1]+'</td> <td>'+list[2]+'</td> <td>'+list[3]+'</td></tr>');
-    //     $("#tblcustomer").append(tr);
-    // });
-
-    //DISABLE TAB
-    //keydown=get press key
-    $("#cusID,#cusName,#cusAddress,#cusContact").keydown(function (e) {
-        if (e.keyCode==9){//key=="Tab"
-            e.preventDefault();
-        }
-    });
-
-        let cusIdRegex=/^(C00-)[0-9]{3}$/;
-        $("#cusID").keydown(function (e) {
-            if (e.key=="Enter"  && cusIdRegex.test($('#cusID').val())){
-                $(this).css("background-color","black","!important");
-                $('#cusName').focus();
-            }
-        });
-
-    $("#cusID").keyup(function (e) {
-        if (cusIdRegex.test($('#cusID').val())){
-            $(this).css("background-color","green","!important");
-        }else{
-            $(this).css("background-color","red","!important");
-        }
-    });
-
-
-    let cusNameRegex=/^[A-Za-z\s]+$/;
-     if(cusNameRegex){
-      $("#cusName").keydown(function (e) {
-          if (e.key=="Enter" && cusNameRegex.test($('#cusName').val())){
-              $("#cusAddress").focus();
-              $(this).css("background-color","green","!important");
-          }else{
-              $(this).css("background-color","red","!important");
-          }
-      });
-    }
-     let cusAddressRegex=/^[A-Za-z\s]+$/;
-    $("#cusAddress").keydown(function (e) {
-        if (e.key=="Enter" && cusAddressRegex.test($('#cusAddress').val())){
-            $("#cusContact").focus();
-            $(this).css("background-color","green","!important");
-        }else{
-            $(this).css("background-color","red","!important");
-        }
-    });
-
-
-    let cusContactRegex= /^\d{10}$/;
-    $("#cusContact").keydown(function (e) {
-        if (e.key=="Enter" && cusContactRegex.test($('#cusContact').val())){
-            saveCustomer();
-            $(this).css("background-color","green","!important");
-        }else{
-            $(this).css("background-color","red","!important");
-        }
-    });
-
-    function saveCustomer() {
-        let cusID=$('#cusID').val();
-        let cusName=$('#cusName').val();
-        let cusAddress=$('#cusAddress').val();
-        let cusContact=$('#cusContact').val();
-
-        let customerOb={
-            customerID:cusID,
-            customerName:cusName,
-            customerAddress:cusAddress,
-            customerContact:cusContact
-        }
-
-        if (checkValidtion()){
-            customerDetail.push(customerOb);
-            clearCustomerFeilds();
-            getAllCustomer();
-
-        }else {
-            alert("THIS CUSTOMER ALREADY IN THIS SYSTEM");
-            clearCustomerFeilds();
-        }
-    }
-
-
-
-    function clearCustomerFeilds() {
-        $("#cusID,#cusName,#cusAddress,#cusContact").val("");
-        $('#cusID').focus();
-    }
-
-
     <!--======================================ITEM MANAGEMENT==============================================-->
 
-    let itemDetails= [];
+
 
     $('#onActionSaveItem').click(function () {
         let iId=$('#itemID').val();

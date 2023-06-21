@@ -64,8 +64,8 @@
     }
 
     body>main>section:nth-child(2)>aside>img{
-        width: 79%;
-        height: 68%;
+        width: 15rem !important;
+        height: 22rem !important;
         top: 15%;
         left: 0;
     }

@@ -22,41 +22,6 @@ html{
     --var-color:white;
 }
 
-@keyframes flicker {
-    0% {
-        filter: blur(5px) brightness(1);
-    }
-    3% {
-        filter: blur(5px) brightness(0);
-    }
-    6% {
-        filter: blur(5px) brightness(0);
-    }
-    7% {
-        filter: blur(5px) brightness(1);
-    }
-    8% {
-        filter: blur(5px) brightness(0);
-    }
-    9% {
-        filter: blur(5px) brightness(1);
-    }
-    10% {
-        filter: blur(5px) brightness(0);
-    }
-    20% {
-        filter: blur(5px) brightness(1);
-    }
-    50% {
-        filter: blur(5px) brightness(1);
-    }
-    99% {
-        filter: blur(5px) brightness(0);
-    }
-    100% {
-        filter: blur(5px) brightness(1);
-    }
-}
 /*end color glowing effect*/
 
 header>p{
@@ -158,6 +123,7 @@ body>main>section:nth-child(1)>article>h3{
 body>main>section:nth-child(1)>article>h4{
     font-family: GungSeo;
     margin-top: 0px;
+    font-family:"Tsukushi A Round Gothic";
 }
 
 body>main>section:nth-child(1)>aside>img{
@@ -184,7 +150,7 @@ body>main>section:nth-child(1)>article>h4:nth-child(2){
 }
 body>main>section:nth-child(1)>article>h4:nth-child(2)::before{
     position: absolute;
-    content: attr(data-text);
+    /*content: attr(data-text);*/
     text-shadow: 0px 0px 20px var(--var-color);
     filter: blur(10px) brightness(0);
     animation: flicker 3s linear forwards;
@@ -379,8 +345,10 @@ body>main>section:nth-child(2)>div:nth-child(3) {
 }
 
 body>main>section:nth-child(2)>aside>img{
-    width: 85%;
-    height: 77%;
+    /*width: 85%;*/
+    /*height: 77%;*/
+    width: 32rem;
+    height: 47rem;
     position: absolute;
    bottom: 10%;
     left: 0;
@@ -591,71 +559,152 @@ body>main>section:nth-child(3)>p:nth-child(1){
 body>main>section:nth-child(3)>p:nth-child(2){
     margin-top: 0;
     position: absolute;
-    top:4.5%;
+    top:3.5%;
     left:46%;
     font-size: 250%;
     font-weight: bold;
     font-family: "Avenir Next";
 }
-body>main>section:nth-child(3)>div:nth-child(6){
+#ud{
     position: absolute;
-    top: 8.5%;
+    top: 6.8%;
     left: 48%;
     width: 5%;
     height: 0.5%;
     background-color: dodgerblue;
 }
-body>main>section:nth-child(3)>div:nth-child(3) {
+body{
+    overflow-x: hidden;
+}
+
+body>main>section:nth-child(3){
+    height: auto;
+}
+
+
+.education,
+.experience {
+    padding-left: 15rem;
+    display: inline-block;
+    max-width: 40%;
+    margin-top: 13%;
+    margin-bottom: 4%;
+}
+
+
+.experience {
+    margin : 4%;
+    padding-left: 0% !important;
+}
+
+h3.title {
+    font-size: 29px;
+    margin-bottom: 30px;
+    margin-left:10px;
+    font-weight: 300;
+    left:20px;
+    color: black !important;
+    font-family: "Avenir Next";
+}
+.timeline-box {
+    flex: 0 0 25%;
+    max-width: 86%;
+}
+
+.timeline {
+    backdrop-filter: blur(5px);
+    padding: 30px 15px;
+    /*border: 2px solid black;*/
+    box-shadow: 5px 3px 15px  lightblue;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline .timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.timeline .timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline .timeline-item::before {
+    content: "";
+    width: 1px;
     position: absolute;
-    width: 50vw;
-    height: 6vh;
-    background-color: rgba(31, 58, 130, 1);
-    left: 26%;
-    top:21%;
-    z-index: 2;
-    border-radius: 35px;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: #2C4B9D;
+}
+
+.timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #2C4B9D;
+}
+
+.timeline .timeline-date {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: black;
+    font-family: "Avenir Next";
+}
+
+.timeline .timeline-date .fa {
+    margin-right: 5px;
+}
+
+.timeline .timeline-title {
+    font-weight: 520;
+    font-size: 21px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: black;
+    font-family: "Avenir Next";
+}
+
+.timeline .timeline-text {
+    line-height: 25px;
+    font-size: 14px;
+/ / text-align: justify;
+    color: black;
+    font-family: "Avenir Next";
+}
+
+/*==============================*/
+body>main>section:nth-child(3)>div:nth-child(3) {
+    display:none;
 }
 
 body>main>section:nth-child(3)>section:nth-child(4) {
-    width: 70vw;
-    height: 60vh;
-    position: absolute;
-    left: 16%;
-    top: 24%;
-    border: 2px solid rgba(65, 177, 184, 1);
-    background-color: white;
+    display:none;
 }
 body>main>section:nth-child(3)>div:nth-child(3)>button {
-    background-color: rgba(31, 58, 130, 1);
-    border-radius: 35px;
-    height: 6vh;
-    color: white;
-    width: 15vh;
-    border: none;
-    position: absolute;
-    font-family: "Avenir Next";
-    font-weight: bold;
+    display:none;
 }
 body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(1) {
-    left: 2%;
+    display:none;
 }
 body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(2) {
-    left:26%;
+    display:none;
 }
 body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(3) {
-    left:54%;
-    background-color:  rgba(0, 168, 255, 1);
+    display:none;
 }
 body>main>section:nth-child(3)>div:nth-child(3)>button:nth-child(4) {
-    left:79%;
+    display: none;
 }
 body>main>section:nth-child(3)>img{
-    width: 68%;
-    height:56%;
-    position: relative;
-    z-index: 1;
-    left: 17%;
-    top: 29%;
+    display:none;
 }
 
 
@@ -714,7 +763,7 @@ body>main>section:nth-child(4)>section:nth-child(4){
 }
 body>main>section>.cat{
     width: 21%;
-    height: 37%;
+    height: auto;
     position: relative;
     background-color: white;
     border: 2px black;
