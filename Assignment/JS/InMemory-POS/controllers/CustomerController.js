@@ -39,8 +39,6 @@ function saveCustomer() {
     newCustomer.customerAddress=cusAddress;
     newCustomer.customerContact=cusContact;
 
-
-
     if (checkValidtion()){
         customerDetail.push(newCustomer);
         clearCustomerFeilds();

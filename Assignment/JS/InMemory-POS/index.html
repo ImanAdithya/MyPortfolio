@@ -160,6 +160,7 @@
                     <button type="button" class="btn btn-outline-warning col " id="onActionSaveItem">SAVE</button>
                     <button type="button" class="btn btn-outline-warning col"id="btnItemUpdate" >UPDATE </button>
                     <button type="button" class="btn btn-outline-warning col" id="btnItemDelete">DELETE </button>
+                    <button type="button" class="btn btn-outline-warning col" id="btnItemGetAll">GET ALL</button>
                 </div>
             </form>
         </div>
@@ -374,10 +375,18 @@
     </section>
 </main>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
+
 <script src="db/db.js"></script>
+<!--======================================CUSTOMER MANAGEMENT==============================================-->
 <script src="models/customer.js"></script>
 <script src="controllers/validations/customerValidation.js"></script>
 <script src="controllers/CustomerController.js"></script>
+<!--======================================ITEM MANAGEMENT====================================================-->
+<script src="models/Item.js"></script>
+<script src="controllers/ItemController.js"></script>
+<script src="controllers/validations/itemValidation.js"></script>
+
+
 <script>
     document.getElementById("customer").style.display="none";
     document.getElementById("item").style.display="none";
@@ -413,92 +422,7 @@
         document.getElementById("placeOrder").style.display="none";
     });
 
-    <!--======================================CUSTOMER MANAGEMENT==============================================-->
-    <!--======================================ITEM MANAGEMENT==============================================-->
 
-
-
-    $('#onActionSaveItem').click(function () {
-        let iId=$('#itemID').val();
-        let description=$('#description').val();
-        let unitPrice=$('#uPrice').val();
-        let qty=$('#quantity').val();
-
-        let ItemOb={
-           itemID:iId,
-           itemDescription:description,
-           itemUnitPrice:unitPrice,
-           itemQty:qty
-        }
-        itemDetails.push(ItemOb);
-
-        getItemALl();
-
-    });
-
-    function getItemALl() {
-        $('#itemTbody').empty();
-        for (let i = 0; i < itemDetails.length; i++) {
-            let id = itemDetails[i].itemID;
-            let des = itemDetails[i].itemDescription;
-            let up = itemDetails[i].itemUnitPrice;
-            let q = itemDetails[i].itemQty
-
-            let itemRow = `<tr>
-                    <td>${id}</td>
-                    <td>${des}</td>
-                    <td>${up}</td>
-                    <td>${q}</td>
-                </tr>`
-
-            $('#tblItem').append(itemRow);
-            bindItemTrEvents();
-        }
-
-    }
-    function bindItemTrEvents() {
-        $('#itemTbody>tr').click(function (event) {
-
-            let idT=$(this).children().eq(0).text();
-            let des=$(this).children().eq(1).text();
-            let uP= $(this).children().eq(2).text();
-            let q=$(this).children().eq(3).text();
-
-            $('#itemID').val(idT);
-            $('#description').val(des);
-            $('#uPrice').val(uP);
-            $('#quantity').val(q);
-
-        });
-    }
-
-    $('#btnItemDelete').click(function () {
-        for (let i = 0; i < itemDetails.length; i++) {
-            if (itemDetails[i].itemID==$('#itemID').val()){
-                itemDetails.splice(i,1);
-                getItemALl();
-                break;
-            }
-        }
-    });
-
-    $('#btnItemUpdate').click(function () {
-        for (let i = 0; i < itemDetails.length; i++) {
-            if ($('#itemID').val()==itemDetails[i].itemID){
-                itemDetails[i].itemID=$('#itemID').val();
-                itemDetails[i].itemDescription=$('#description').val();
-                itemDetails[i].itemUnitPrice=$('#UnitPrice').val();
-                itemDetails[i].itemQty=$('#quantity').val();
-                getAllCustomer();
-                break;
-            }
-        }
-    });
-
-    function clearItemFeilds() {
-        $("#itemID,#description,#uPrice,#quantity").val("");
-        $('#itemID').focus();
-    }
 
 </script>
 </body>
