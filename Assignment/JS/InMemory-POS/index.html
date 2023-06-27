@@ -25,6 +25,7 @@
                     <a class="nav-link"  id="btnCustomer">CUSTOMER</a>
                     <a class="nav-link"  id="btnItem">ITEM</a>
                     <a class="nav-link"  id="btnPlaceOrder">PLACEORDER</a>
+                    <a class="nav-link"  id="btnOrd">ORDERS</a>
                 </div>
             </div>
 
@@ -296,34 +297,28 @@
                 <h5 class="text-warning  mt-3 mb-2">PURCHASE ORDER</h5>
                 <div class="row">
                     <div class="mb-1 col">
-                        <label for="Total" class="form-label text-white">TOTAL</label>
+                        <label for="inputTotal" class="form-label text-white">TOTAL</label>
                         <input type="number"
                                class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                               id="Total" readonly>
+                               id="inputTotal" readonly>
                     </div>
 
-                    <div class="mb-5 col text-warning">
-                        <label for="subTotal" class="form-label ">SUB TOTAL</label>
-                        <input type="number"
-                               class="form-control bg-black border-warning text-warning focus-ring-warning focus-ring mb-4 rounded"
-                               id="subTotal" readonly>
-                    </div>
                 </div>
 
                 <div class="row">
                     <div class="mb-1 col">
-                        <label for="cash" class="form-label text-white">CASH</label>
+                        <label for="inputCash" class="form-label text-white">CASH</label>
                         <input type="number"
                                class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                               id="cash">
+                               id="inputCash">
                     </div>
 
-                    <div class="mb-1 col">
-                        <label for="discount" class="form-label text-white">DISCOUNT</label>
-                        <input type="number"
-                               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "
-                               id="discount">
-                    </div>
+<!--                    <div class="mb-1 col">-->
+<!--                        <label for="discount" class="form-label text-white">DISCOUNT</label>-->
+<!--                        <input type="number"-->
+<!--                               class="form-control bg-black border-white text-warning focus-ring-warning focus-ring "-->
+<!--                               id="discount">-->
+<!--                    </div>-->
 
                     <div class="mb-1 col">
                         <label for="balance" class="form-label text-white">BALANCE</label>
@@ -334,11 +329,29 @@
 
                 </div>
                 <div class="row ms-1">
-                    <button class="btn btn-outline-warning mt-5 mb-5" type="submit">PURCHASE</button>
+                    <button class="btn btn-outline-warning mt-5 mb-5" type="button" id="btnPurchase"> PURCHASE</button>
                 </div>
 
             </div>
         </div>
+    </section>
+</main>
+
+<main id="ord" class="object-fit-contain">
+    <section class="row  m-auto object-fit-contain">
+        <table class="table text-white object-fit-contain">
+            <thead class="text-warning">
+            <tr>
+                <th scope="col">Order ID</th>
+                <th scope="col">Date</th>
+                <th scope="col">Customer ID</th>
+            </tr>
+            </thead>
+            <tbody id="tblBodyOrders">
+
+
+            </tbody>
+        </table>
     </section>
 </main>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
@@ -354,6 +367,8 @@
 <script src="controllers/validations/itemValidation.js"></script>
 <!--====================================== PLACE ORDER MANAGEMENT====================================================-->
 <script src="controllers/PlaceOrderController.js"></script>
+<script src="models/placeOrder.js"></script>
+<script src="models/orders.js"></script>
 
 
 <script>
@@ -367,6 +382,7 @@
         document.getElementById("customer").style.display="block";
         document.getElementById("item").style.display="none";
         document.getElementById("placeOrder").style.display="none";
+        document.getElementById("ord").style.display="none";
     });
 
     document.getElementById("btnItem").addEventListener("click",function (){
@@ -374,6 +390,7 @@
         document.getElementById("customer").style.display="none";
         document.getElementById("item").style.display="block";
         document.getElementById("placeOrder").style.display="none";
+        document.getElementById("ord").style.display="none";
     });
 
 
@@ -382,13 +399,23 @@
         document.getElementById("customer").style.display="none";
         document.getElementById("item").style.display="none";
         document.getElementById("placeOrder").style.display="block";
+        document.getElementById("ord").style.display="none";
     });
+    document.getElementById("btnOrd").addEventListener("click",function (){
+        document.getElementById("Home").style.display="none";
+        document.getElementById("customer").style.display="none";
+        document.getElementById("item").style.display="none";
+        document.getElementById("placeOrder").style.display="none";
+        document.getElementById("ord").style.display="block";
+    });
+
 
     document.getElementById("btnHome").addEventListener("click",function (){
         document.getElementById("Home").style.display="block";
         document.getElementById("customer").style.display="none";
         document.getElementById("item").style.display="none";
         document.getElementById("placeOrder").style.display="none";
+        document.getElementById("ord").style.display="none";
     });
 
 

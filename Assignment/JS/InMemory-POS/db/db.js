@@ -10,4 +10,6 @@ let itemDetails= [
     {itemID:"I00-003",itemDescription:"Bat",itemUnitPrice:7000,itemQty:5}
 ];
 
-let orderDetail=[];
+let orderDetailDb=[];
+
+let orderDb=[];
