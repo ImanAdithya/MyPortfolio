@@ -1,5 +1,6 @@
 @media all and (max-width: 768px) and (min-width: 425px){
 
+
     body{
         overflow-x:hidden;
     }
@@ -44,32 +45,32 @@
     body>main>section:nth-child(1)>article>h4:nth-child(1){
         top:13%;
         left:11%;
-        font-size:250%;
+        font-size:5.3vw;
     }
     body>main>section:nth-child(1)>article>h4:nth-child(2){
         top:13%;
         left: 29%;
-        font-size: 250%;
+        font-size: 5.3vw;
     }
     body>main>section:nth-child(1)>article>h4:nth-child(3){
         top:18.5%;
         left: 11%;
-        font-size:250%;
+        font-size:5.3vw;
     }
     body>main>section:nth-child(1)>article>h4:nth-child(4){
         top:18.5%;
         left:20%;
-        font-size: 250%;
+        font-size: 5.3vw;
     }
     body>main>section:nth-child(1)>article>p{
         top:25%;
         left: 10%;
-        font-size: 60%;
+        font-size: 1.4vw;
     }
     body>main>section:nth-child(1)>article>img:nth-child(6){
-        top: 33%;
-        width: 25%;
-        height: 3.6%;
+        top: 33.5%;
+        width: 13vw;
+        height: 4.5vh;
     }
 
     /*About Responsive*/
@@ -392,6 +393,28 @@
         top: 180%;
         font-family: "Avenir Next";
     }
+
+    /*#edusec{*/
+    /*    display:none;*/
+    /*}*/
+
+    /*#experinceSec{*/
+    /*    display:none;*/
+    /*}*/
+
+    /*#com1{*/
+    /*    display:block;*/
+    /*}*/
+    /*#com2{*/
+    /*    display:block;*/
+    /*}*/
+    /*#com3{*/
+    /*    display:block;*/
+    /*}*/
+    /*#ud{*/
+    /*    display:block;*/
+    /*}*/
+
 
 
 

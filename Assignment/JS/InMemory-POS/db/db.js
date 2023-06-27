@@ -5,7 +5,9 @@ let customerDetail=[
 ];
 
 let itemDetails= [
-    {itemID:"I00-001",itemDescription:"Volley Ball",itemUnitPrice:7000,itemQty:1},
-    {itemID:"I00-002",itemDescription:"wickets",itemUnitPrice:100,itemQty:3},
-    {itemID:"I00-003",itemDescription:"Bat",itemUnitPrice:7000,itemQty:1}
+    {itemID:"I00-001",itemDescription:"Volley Ball",itemUnitPrice:7000,itemQty:30},
+    {itemID:"I00-002",itemDescription:"wickets",itemUnitPrice:100,itemQty:20},
+    {itemID:"I00-003",itemDescription:"Bat",itemUnitPrice:7000,itemQty:5}
 ];
+
+let orderDetail=[];

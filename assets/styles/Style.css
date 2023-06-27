@@ -130,8 +130,8 @@ body>main>section:nth-child(1)>aside>img{
     position: absolute;
     top: 40px;
     right: 40px;
-    width: 660px;
-    height: 700px;
+    width: 42vw;
+    height: 75vh;
     }
 
 body>main>section:nth-child(1)>article>h4:nth-child(1){
@@ -139,14 +139,14 @@ body>main>section:nth-child(1)>article>h4:nth-child(1){
     position: absolute;
     top:21%;
     left:11%;
-    font-size:400%;
+    font-size:3.9vw;
 }
 body>main>section:nth-child(1)>article>h4:nth-child(2){
     color: var(--var-color);
     position: absolute;
     top:21%;
     left: 26%;
-    font-size: 400%;
+    font-size: 3.9vw;
 }
 body>main>section:nth-child(1)>article>h4:nth-child(2)::before{
     position: absolute;
@@ -162,7 +162,7 @@ body>main>section:nth-child(1)>article>h4:nth-child(3){
     position: absolute;
     top:29%;
     left: 11%;
-    font-size:400%;
+    font-size:3.9vw;
 }
 
 body>main>section:nth-child(1)>article>h4:nth-child(4){
@@ -172,7 +172,7 @@ body>main>section:nth-child(1)>article>h4:nth-child(4){
     position: absolute;
     top:29%;
     left:20%;
-    font-size: 400%;
+    font-size: 3.9vw;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 6s forwards;
@@ -206,7 +206,7 @@ body>main>section:nth-child(1)>article>p{
     position: absolute;
     top:37%;
     left: 96px;
-    font-size:130%;
+    font-size:1.1vw;
     /*font-family:Optima;*/
     /*opacity: .5;*/
     font-family:"Tsukushi A Round Gothic";
@@ -255,8 +255,8 @@ body>main>section:nth-child(1)>article>div>p{
     font-size: 14px;
 }
 body>main>section:nth-child(1)>article>img{
-    width: 20.5%;
-    height: 6.5%;
+    width: 10.5vw;
+    height: 6.5vh;
     position: relative;
     top: 51%;
     left: 10%;
@@ -294,7 +294,8 @@ body>main>section:nth-child(1)>img:nth-child(6){
     bottom: 40px;
 }
 
-/*About Styles*/
+
+/*====================About Styles======================*/
 body>main>section:nth-child(2){
     position: relative;
     width: 100vw;
@@ -306,7 +307,7 @@ body>main>section:nth-child(2)>p:nth-child(1){
     position: absolute;
     top: 0;
     left: 30%;
-    font-size: 750%;
+    font-size: 7vw;
     font-weight: bold;
     opacity:.1;
     font-family: "Avenir Next";
@@ -331,7 +332,7 @@ body>main>section:nth-child(2)>p:nth-child(2){
     position: absolute;
     top: 5%;
     left: 43%;
-    font-size: 225%;
+    font-size: 2vw;
     font-weight: bold;
     font-family: "Avenir Next";
 }
@@ -347,8 +348,8 @@ body>main>section:nth-child(2)>div:nth-child(3) {
 body>main>section:nth-child(2)>aside>img{
     /*width: 85%;*/
     /*height: 77%;*/
-    width: 32rem;
-    height: 47rem;
+    width: 32vw;
+    height: 80vh;
     position: absolute;
    bottom: 10%;
     left: 0;
@@ -357,7 +358,7 @@ body>main>section:nth-child(2)>article>p:nth-child(1){
     position: relative;
     left: 0;
     top: 150px;
-    font-size: 250%;
+    font-size: 2.5vw;
     font-family:"Toppan Bunkyu Gothic";
     overflow: hidden;
     white-space: nowrap;
@@ -371,7 +372,7 @@ body>main>section:nth-child(2)>article>p:nth-child(2){
     position: relative;
     left: 0;
     top: 14%;
-    font-size: 120%;
+    font-size: 1.14vw;
     font-family:"Toppan Bunkyu Gothic";
     opacity: .7;
 }
@@ -379,7 +380,7 @@ body>main>section:nth-child(2)>article>p:nth-child(3){
     position: relative;
     left: 0;
     top: 14%;
-    font-size: 120%;
+    font-size: 1.14vw;
     font-family:"Toppan Bunkyu Gothic";
     opacity: .7;
 }
@@ -551,7 +552,7 @@ body>main>section:nth-child(3)>p:nth-child(1){
     margin-top: 0;
     position: absolute;
     left: 30%;
-    font-size: 780%;
+    font-size: 7vw;
     font-weight: bold;
     opacity:.1;
     font-family: "Avenir Next";
@@ -561,7 +562,7 @@ body>main>section:nth-child(3)>p:nth-child(2){
     position: absolute;
     top:3.5%;
     left:46%;
-    font-size: 250%;
+    font-size: 2vw;
     font-weight: bold;
     font-family: "Avenir Next";
 }
@@ -724,7 +725,7 @@ body>main>section:nth-child(4)>h1:nth-child(1){
     position: absolute;
     top: 0;
     right:33%;
-    font-size: 750%;
+    font-size: 7vw;
     font-weight: bold;
     opacity:.1;
     font-family: "Avenir Next";
@@ -742,7 +743,7 @@ body>main>section:nth-child(4)>h3:nth-child(2){
     position: absolute;
     top: 4.5%;
     right:44%;
-    font-size: 225%;
+    font-size: 2vw;
     font-weight: bold;
     font-family: "Avenir Next";
 }
@@ -762,13 +763,17 @@ body>main>section:nth-child(4)>section:nth-child(4){
     bottom: 0;
 }
 body>main>section>.cat{
-    width: 21%;
+    width: 21.3vw;
     height: auto;
     position: relative;
     background-color: white;
     border: 2px black;
     top: -7%;
-    box-shadow: 5px 5px 5px  rgba(152, 210, 240, 1)
+    box-shadow: 5px 5px 5px  rgba(152, 210, 240, 1);
+}
+body>main>section>.cat:hover{
+    backgrond-color:red;
+    color:darkblue;
 }
 body>main>section>div:nth-child(5){
     left: 4.2%;
@@ -978,7 +983,7 @@ body>main>section:nth-child(5)>h1:nth-child(1){
     position: absolute;
     top: 0;
     right:33%;
-    font-size: 750%;
+    font-size: 7vw;
     font-weight: bold;
     opacity:.1;
     font-family: "Avenir Next";
@@ -988,7 +993,7 @@ body>main>section:nth-child(5)>h3:nth-child(2){
     margin-top: 0;
     margin-bottom: 0;
     position: absolute;
-    font-size: 220%;
+    font-size: 2vw;
     font-weight: bold;
     font-family: "Avenir Next";
     left: 46%;
@@ -1097,7 +1102,7 @@ body>main>section:nth-child(6)>h1:nth-child(1){
     position: absolute;
     top: 0;
     right:33%;
-    font-size: 750%;
+    font-size: 7vw;
     font-weight: bold;
     opacity:.1;
     font-family: "Avenir Next";
@@ -1106,7 +1111,7 @@ body>main>section:nth-child(6)>h3:nth-child(2){
     margin-top: 0;
     margin-bottom: 0;
     position: absolute;
-    font-size: 220%;
+    font-size: 2vw;
     font-weight: bold;
     font-family: "Avenir Next";
     left: 44%;

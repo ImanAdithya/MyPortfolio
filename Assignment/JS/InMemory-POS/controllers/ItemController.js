@@ -57,7 +57,7 @@ function saveItem() {
     if (checkValidationItem()){
         itemDetails.push(newItem);
         getItemALl();
-        clearCustomerFeilds();
+        clearItemFeilds();
     }else{
         alert("THIS ITEM ALREADY IN THIS SYSTEM");
         clearItemFeilds();
