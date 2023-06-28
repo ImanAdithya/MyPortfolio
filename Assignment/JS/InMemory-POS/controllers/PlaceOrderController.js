@@ -51,6 +51,10 @@ $('#cmbItemCode').change(function () {
 $("#btnAddToCart").click(function () {
     addToCart();
 });
+
+$('#btnPurchase').click(function () {
+    purchaseOrder();
+});
 function purchaseOrder() {
     let IdOfOrder = $('#InputOID').val();
     let dateOfOrder=$('#InputDate').val();
@@ -118,19 +122,6 @@ function addToCart() {
     }
 }
 
-// function clearFields() {
-//     $("#SelectedCusName").val("");
-//     $("#selectedItemName").val("");
-//     $("#UnitPriceP").val("");
-//     $("#QtyOnHndP").val("");
-//     $("#QtyP").val("");
-//     $("#tblCartBody").empty();
-//     $("#inputSubTotal").val("");
-//     $("#inputTotal").val("");
-//     $("#inputDiscount").val("");
-//     $("#inputCash").val("");
-//
-// }
 
 $('#inputCash').keydown(function (event){
 
@@ -142,7 +133,19 @@ $('#inputCash').keydown(function (event){
     }
 
 });
+function clearFields() {
+    $("#inputCash").val("");
+    $("#InputDate").val("");
+    $("#selectedCusName").val("");
+    $("#inputTotal").val("");
+    $("#selectedItemDes").val("");
+    $("#tBodyPlaceOrder").empty();
+    $("#selectedItemUp").val("");
+    $("#selectedQty").val("");
+    $("#Qty").val("");
+    $("#balance").val("");
 
+}
 
 
         
