@@ -1,6 +1,9 @@
 @media all and (max-width: 425px) and (min-width: 320px){
 
 
+    #edusec{
+        display:none;
+    }
     body>main>section:nth-child(1) .background {
         position: absolute;
         display: none;
@@ -31,35 +34,36 @@
     }
     body>main>section:nth-child(1)>article>h4:nth-child(1) {
         top: 5%;
-        left: 16%;
+        left: 17%;
+        font-size: 7vw;
     }
     body>main>section:nth-child(1)>article>h4:nth-child(2) {
         color: var(--var-color);
         position: absolute;
         top: 5%;
         left: 34%;
-        font-size: 250%;
+        font-size: 7vw;
     }
     body>main>section:nth-child(1)>article>h4:nth-child(3) {
         top: 10%;
         left: 16%;
-        font-size: 250%;
+        font-size: 8vw;
     }
     body>main>section:nth-child(1)>article>h4:nth-child(4) {
         top: 10%;
         left: 25%;
-        font-size: 250%;
+        font-size: 8vw;
         margin-bottom:0;
     }
     body>main>section:nth-child(1)>article>p {
         top: 18%;
         left: 60px;
-        font-size: 70%;
+        font-size: 2.8vw;
         margin:0;
     }
     body>main>section:nth-child(1)>article>img {
-        width: 19.5% !important;
-        height: 6.5%;
+        width: 22vw !important;
+        height: 12vh;
         position: relative;
         top: 28% !important;
         left: 34%;
@@ -76,15 +80,18 @@
     }
     body>main>section:nth-child(2)>p:nth-child(1) {
         margin: 0;
-        top: 0%;
+        top: 2%;
         left: 22%;
-        font-size: 300%;
+        font-size: 11vw;
     }
     body>main>section:nth-child(2)>p:nth-child(2) {
         margin: 0;
-        top: 3%;
+        top: 6%;
         left: 37%;
-        font-size: 110%;
+        font-size: 4vw;
+    }
+    body>main>section:nth-child(2)>div:nth-child(3) {
+        top:11%;
     }
     body>main>section:nth-child(2)>article>div:nth-child(4) {
         display:none;
@@ -99,13 +106,13 @@
         position: relative;
         left: 0;
         top: 8%;
-        font-size: 150%;
+        font-size: 6vw;
         margin:0;
     }
     body>main>section:nth-child(2)>article>p:nth-child(2) {
         left: 0;
         top: 10%;
-        font-size: 45%;
+        font-size: 1.7vw;
         padding-right:20px;
 
     }
@@ -113,20 +120,20 @@
         position: relative;
         left: 0;
         top: 10%;
-        font-size: 45%;
+        font-size: 1.7vw;
         font-family: "Toppan Bunkyu Gothic";
         opacity: .7;
     }
     body>main>section:nth-child(3)>p:nth-child(1) {
         left: 20%;
-        font-size: 300%;
+        font-size: 11vw;
         margin:0;
     }
     body>main>section:nth-child(3)>p:nth-child(2) {
         margin: 0;
         top: 3.2%;
         left: 42%;
-        font-size: 110%;
+        font-size: 4vw;
     }
     body>main>section:nth-child(3)>div:nth-child(6) {
         top: 8%;
@@ -152,19 +159,19 @@
     body>main>section:nth-child(4)>h1:nth-child(1) {
         margin: 0;
         right: 26%;
-        font-size: 300%;
+        font-size: 11vw;
     }
     body>main>section:nth-child(4)>h3:nth-child(2) {
         margin: 0;
-        top: 1.4%;
+        top: 1%;
         right: 44%;
-        font-size: 110%;
+        font-size: 4vw;
     }
     body>main>section:nth-child(4)> #underline {
         width: 7%;
         height: 3px;
         left: 43%;
-        top: 3%;
+        top: 2.5%;
     }
     body>main>section:nth-child(4)>section:nth-child(4) {
         display:none;
@@ -192,7 +199,8 @@
         padding-bottom: 9%;
     }
     #s3{
-        left:15%;
+        left:35% !important;
+        right:30%;
         margin-bottom: 12%;
         padding-bottom: 9%;
     }

@@ -1,4 +1,8 @@
 /*Header Style*/
+
+*{
+    /*cursor:none;*/
+}
 body{
     position: relative;
 }

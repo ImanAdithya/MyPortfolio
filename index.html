@@ -447,29 +447,41 @@
         AOS.init();
     </script>
 
+        <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+        <script type="text/javascript" src="assets/script/script.js"></script>
+        <script src="assets/js/jquery-3.7.0.min.js"></script>
+        <script>
+            let listTyping=["Software Engineer","UI UX Engineer"," Software Developer"];
+            let i=0;
+            let j=0
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-    <script type="text/javascript" src="assets/script/script.js"></script>
-    <script src="assets/js/jquery-3.7.0.min.js"></script>
-    <script>
-        let listTyping=["Software Engineer","UI UX Engineer"," Software Developer"];
-        let i=0;
-        let j=0
+            setInterval(function () {
+                let aniPath=listTyping[i].substring(0,j);
+                $("#type").text(aniPath);
+                j++
+                if (j>listTyping[i].length){
+                    j=0;
+                    i++;
+                }
+                if (i==listTyping.length){
+                    i=0;
+                }
+            },130)
 
-        setInterval(function () {
-            let aniPath=listTyping[i].substring(0,j);
-            $("#type").text(aniPath);
-            j++
-            if (j>listTyping[i].length){
-                j=0;
-                i++;
-            }
-            if (i==listTyping.length){
-                i=0;
-            }
-        },130)
+            // options = {
+            //            "cursorOuter": "circle-basic",
+            //             "hoverEffect": "circle-move",
+            //            "hoverItemMove": false,
+            //             "defaultCursor": false,
+            //             "defaultColour":"#000000",
+            //             "outerWidth": 30,
+            //             "outerHeight": 30,
+            //             "outerColour":"#000000"
+            //         };
+            //         magicMouse(options);
 
-    </script>
-</body>
+        </script>
+    </body>
 
-</html>
+    </html>
